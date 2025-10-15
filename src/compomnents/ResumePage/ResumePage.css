@@ -1,0 +1,45 @@
+.resume {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 10%;
+    min-height: 80vh;
+    color: white;
+  }
+  
+  .resume-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+  }
+  
+  .resume-tab {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1.2rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .resume-tab:hover {
+    color: #00ff99;
+  }
+  
+  .resume-tab.active {
+    color: #00ff99;
+    font-weight: 600;
+    border-left: 3px solid #00ff99;
+    padding-left: 10px;
+  }
+  
+  .resume-content {
+    flex: 1;
+    padding-left: 60px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #ddd;
+  }
+  

@@ -1,5 +1,5 @@
 import "./Homepage.css";
-import avatar from "../../assets/avatar1.JPG";
+import avatar from "../../assets/avatar.JPG";
 
 export default function Homepage() {
   return (
