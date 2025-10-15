@@ -2,9 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 60px 10%;
+    padding: 60px 20%;
     min-height: 80vh;
-    color: white;
   }
   
   .resume-sidebar {
@@ -17,7 +16,7 @@
   .resume-tab {
     background: none;
     border: none;
-    color: #aaa;
+    color: #888;
     font-size: 1.2rem;
     text-align: left;
     cursor: pointer;
@@ -25,13 +24,13 @@
   }
   
   .resume-tab:hover {
-    color: #00ff99;
+    color: #739aa6;
   }
   
   .resume-tab.active {
-    color: #00ff99;
+    color: #739aa6;
     font-weight: 600;
-    border-left: 3px solid #00ff99;
+    border-left: 3px solid #739aa6;
     padding-left: 10px;
   }
   
@@ -40,6 +39,6 @@
     padding-left: 60px;
     font-size: 1rem;
     line-height: 1.8;
-    color: #ddd;
+    color: #666;
   }
   

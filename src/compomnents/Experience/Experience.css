@@ -1,0 +1,19 @@
+.experience-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.experience-item {
+    margin-bottom: 35px;
+}
+
+.experience-line-one, .experience-line-two {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.experience-line-two {
+    color: #739aa6;
+}

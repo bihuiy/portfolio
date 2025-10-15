@@ -1,13 +1,8 @@
-body {
-  background-color: #252525;
-  color: #F1EEE9;
-}
-
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 5% 20%;
     box-sizing: border-box;
   }
   
@@ -25,7 +20,8 @@ body {
   }
   
   .description {
-    color: #aaa;
+    color: #888;
+    font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 2rem;
   }
@@ -38,20 +34,30 @@ body {
   
   .download-btn {
     background-color: #739aa6;
-    color: #000;
-    padding: 0.8rem 1.5rem;
+    color: #252525;
+    padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 1.2rem;
     cursor: pointer;
   }
   
   .socials a {
-    color: #739aa6;
+    color: #252525;
+    font-size: 1.5rem;
     margin-right: 1rem;
     text-decoration: none;
   }
   
+  .download-btn:hover {
+    color: #F1EEE9;
+  }
+
+  .socials a:hover {
+    color: #739aa6;
+  }
+
   .hero-right {
     display: flex;
     justify-content: center;
@@ -60,8 +66,8 @@ body {
   
  .avatar-border {
     position: relative;
-    width: 280px;
-    height: 280px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,8 +83,8 @@ body {
   } */
   
   .avatar {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-color: #F1EEE9;
     border-radius: 50%;
   }
@@ -99,9 +105,8 @@ body {
   
 footer {
     display: flex;
-    justify-content: center;
-    gap: 100px;
-    padding: 60px 0;
+    justify-content: space-between;
+    padding: 2% 20%;
 }
 
 .footer-detail {
@@ -111,14 +116,14 @@ footer {
 }
 
 .footer-detail h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     margin: 0;
     line-height: 1;
 }
 
 .footer-detail p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin: 0;
     line-height: 1.2;
 }

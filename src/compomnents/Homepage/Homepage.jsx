@@ -1,5 +1,8 @@
 import "./Homepage.css";
 import avatar from "../../assets/avatar.JPG";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { MdDownload } from "react-icons/md";
 
 export default function Homepage() {
   return (
@@ -16,13 +19,13 @@ export default function Homepage() {
           </p>
 
           <div className="buttons">
-            <button className="download-btn">Download CV ⬇️</button>
+            <button className="download-btn">Download CV <MdDownload /></button>
             <div className="socials">
               <a href="https://github.com/bihuiy" target="_blank">
-                GitHub
+                GitHub <FaGithub />
               </a>
               <a href="https://www.linkedin.com/in/bihuiy/" target="_blank">
-                LinkedIn
+              LinkedIn <FaLinkedin />
               </a>
             </div>
           </div>

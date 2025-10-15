@@ -1,12 +1,28 @@
 header {
+    
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 100px;
+    padding: 0 20%;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
+}
+
+.nav-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-links a:hover {
+    color: #739aa6;
+}
+
+.logo-title {
+    margin-top: 10px;
 }

@@ -27,11 +27,11 @@ export default function LogoTitle() {
   return (
     <div className="logo-display">
       <div className="logo-name">
-        <h1>
+        <h2>
           VIVIEN
           <br />
           YANG
-        </h1>
+        </h2>
       </div>
       <h2 key={index} className="flashing-title">
         {roles[index]}

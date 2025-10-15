@@ -1,0 +1,22 @@
+.education h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.education-item {
+    margin-bottom: 35px;
+}
+
+.education-line-one, .education-line-two {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.education-line-two {
+    color: #739aa6;
+}
+
+.education-line-one {
+    font-weight: 500;
+}
