@@ -58,15 +58,15 @@ export default function Homepage() {
           </p>
         </div>
         <div className="footer-detail">
-          <h2>8</h2>
+          <h2>10</h2>
           <p>
-            <span>Technology</span>
+            <span>Technologies</span>
             <br />
-            <span>mastered</span>
+            <span>across full-stack development</span>
           </p>
         </div>
         <div className="footer-detail">
-          <h2>500</h2>
+          <h2>270</h2>
           <p>
             <span>Code</span>
             <br />
