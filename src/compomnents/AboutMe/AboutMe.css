@@ -6,3 +6,28 @@
 .about-me-item {
     margin-bottom: 15px;
 }
+
+.about-me-title button {
+    margin: 0 20px;
+    font-size: 1.5rem;
+    background-color: #F1EEE9;
+    color: #666;
+    border: none;
+}
+
+.about-me-title button:hover {
+    color: #739aa6;
+}
+
+.about-me-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-me video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    object-fit: cover;
+}

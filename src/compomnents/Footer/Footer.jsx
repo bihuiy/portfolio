@@ -1,11 +1,11 @@
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import "./ContactPage.css";
+import "./Footer.css";
 
-export default function ContactPage() {
+export default function Footer() {
   return (
-    <div className="contact">
+    <footer>
       <div className="short-bio">
         <p>
           Hi! Want to have a chat? Send me an email or message me on LinkedIn -
@@ -33,6 +33,6 @@ export default function ContactPage() {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

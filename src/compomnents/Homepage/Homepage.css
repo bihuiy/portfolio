@@ -103,26 +103,26 @@
     100% { transform: rotate(360deg); }
   } */
   
-footer {
+.label {
     display: flex;
     justify-content: space-between;
     padding: 2% 20%;
 }
 
-.footer-detail {
+.label-detail {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.footer-detail h2 {
+.label-detail h2 {
     font-size: 3rem;
     font-weight: 700;
     margin: 0;
     line-height: 1;
 }
 
-.footer-detail p {
+.label-detail p {
     font-size: 1.2rem;
     margin: 0;
     line-height: 1.2;

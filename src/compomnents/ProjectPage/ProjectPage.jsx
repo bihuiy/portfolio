@@ -1,11 +1,10 @@
 import { useState } from "react";
 import "./ProjectPage.css";
-import { FaArrowRotateLeft } from "react-icons/fa6";
-import { FaArrowRotateRight } from "react-icons/fa6";
+import { IoMdArrowDropleftCircle } from "react-icons/io";
+import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { BsArrowUpRight } from "react-icons/bs";
-import { GoArrowUpRight } from "react-icons/go";
-import { DiGithubBadge } from "react-icons/di";
 import { FaGithub } from "react-icons/fa";
+import Footer from "../Footer/Footer";
 
 export default function ProjectPage() {
   const projects = [
@@ -33,7 +32,7 @@ export default function ProjectPage() {
       date: "7th Aug - 18th Aug 2025 | Pair Project",
       description: [
         "Designed and developed a full-stack web application that allows users to discover, listen to, and manage playlists and songs.",
-        "Contributed mainly to the Homepage, Song, and Profile features.",
+        "This is a group project completed by two people. I contributed mainly to the Homepage, Song, and Profile features.",
       ],
       technology: "Technology used: React.js, Express.js, MongoDB.",
       video:
@@ -67,7 +66,7 @@ export default function ProjectPage() {
       ],
       technology: "Technology used: HTML, CSS, and JavaScript.",
       video:
-        "https://res.cloudinary.com/dnycwkg4c/video/upload/v1760596780/FroggerRecording_waoea8.mov",
+        "https://res.cloudinary.com/dnycwkg4c/video/upload/v1760613336/Froggerrecording_aukczp.mov",
     },
   ];
 
@@ -83,50 +82,52 @@ export default function ProjectPage() {
   };
 
   return (
-    <div className="project-container">
-      <div className="project-detail">
-        <h1>{`0${currentProject.id}`}</h1>
-        <h2>{currentProject.title}</h2>
-        <h3>{currentProject.subtitle}</h3>
-        <p>{currentProject.githubFrontend}</p>
-        <p>{currentProject.githubBackend}</p>
-        <p>{currentProject.date}</p>
-        <ul>
-          {currentProject.description.map((item, index) => (
-            <li key={index} className="project-item">
-              {item}
-            </li>
-          ))}
-        </ul>
-        <h4>{currentProject.technology}</h4>
-        <a href="http://petrolspy.netlify.app/">
-          <BsArrowUpRight />
-        </a>
-        <a href="https://github.com/bihuiy">
-          <FaGithub />
-        </a>
-      </div>
-      <div className="project-display">
-        <video
-          key={currentProject.id}
-          controls
-          autoPlay
-          muted
-          playsInline
-          width="100%"
-          className="project-video"
-        >
-          <source src={currentProject.video} type="video/mp4" />
-        </video>
-        <div className="project-buttons">
-          <button onClick={handlePrev}>
-            <FaArrowRotateLeft />
-          </button>
-          <button onClick={handleNext}>
-            <FaArrowRotateRight />
-          </button>
+    <>
+      <div className="project-container">
+        <div className="project-detail">
+          <h1>{`0${currentProject.id}`}</h1>
+          <h2>{currentProject.title}</h2>
+          <h3>{currentProject.subtitle}</h3>
+          <p>{currentProject.githubFrontend}</p>
+          <p>{currentProject.githubBackend}</p>
+          <p>{currentProject.date}</p>
+          <ul>
+            {currentProject.description.map((item, index) => (
+              <li key={index} className="project-item">
+                {item}
+              </li>
+            ))}
+          </ul>
+          <h4>{currentProject.technology}</h4>
+          <a href="http://petrolspy.netlify.app/">
+            <BsArrowUpRight />
+          </a>
+          <a href="https://github.com/bihuiy">
+            <FaGithub />
+          </a>
+        </div>
+        <div className="project-display">
+          <video
+            key={currentProject.id}
+            controls
+            autoPlay
+            muted
+            playsInline
+            className="project-video"
+          >
+            <source src={currentProject.video} type="video/mp4" />
+          </video>
+          <div className="project-buttons">
+            <button onClick={handlePrev}>
+              <IoMdArrowDropleftCircle />
+            </button>
+            <button onClick={handleNext}>
+              <IoMdArrowDroprightCircle />
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

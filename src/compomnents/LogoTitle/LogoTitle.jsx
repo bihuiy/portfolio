@@ -3,7 +3,6 @@ import "./LogoTitle.css";
 
 export default function LogoTitle() {
   const roles = [
-    "<🖊️>",
     "Full-Stack Developer",
     "React.js Developer",
     "Node.js Developer",

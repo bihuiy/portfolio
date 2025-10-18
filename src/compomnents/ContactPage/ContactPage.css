@@ -1,0 +1,8 @@
+.contact {
+    padding: 60px 20%;
+}
+
+.contact-details {
+    display: flex;
+    gap: 1rem;
+}

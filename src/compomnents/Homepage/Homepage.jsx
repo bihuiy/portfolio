@@ -14,18 +14,20 @@ export default function Homepage() {
           </h2>
 
           <p className="description">
-            I enjoy crafting elegant digital experiences and building
-            user-centered web applications using modern technologies.
+            I enjoy solving problems through code and building
+            full-stack web applications that bring logic and order to life.
           </p>
 
           <div className="buttons">
-            <button className="download-btn">Download CV <MdDownload /></button>
+            <button className="download-btn">
+              Download CV <MdDownload />
+            </button>
             <div className="socials">
               <a href="https://github.com/bihuiy" target="_blank">
                 GitHub <FaGithub />
               </a>
               <a href="https://www.linkedin.com/in/bihuiy/" target="_blank">
-              LinkedIn <FaLinkedin />
+                LinkedIn <FaLinkedin />
               </a>
             </div>
           </div>
@@ -40,8 +42,8 @@ export default function Homepage() {
         </div>
       </section>
 
-      <footer>
-        <div className="footer-detail">
+      <div className="label">
+        <div className="label-detail">
           <h2>1</h2>
           <p>
             <span>Years of</span>
@@ -49,7 +51,7 @@ export default function Homepage() {
             <span>experience</span>
           </p>
         </div>
-        <div className="footer-detail">
+        <div className="label-detail">
           <h2>4</h2>
           <p>
             <span>Projects</span>
@@ -57,7 +59,7 @@ export default function Homepage() {
             <span>completed</span>
           </p>
         </div>
-        <div className="footer-detail">
+        <div className="label-detail">
           <h2>10</h2>
           <p>
             <span>Technologies</span>
@@ -65,7 +67,7 @@ export default function Homepage() {
             <span>across full-stack development</span>
           </p>
         </div>
-        <div className="footer-detail">
+        <div className="label-detail">
           <h2>270</h2>
           <p>
             <span>Code</span>
@@ -73,7 +75,7 @@ export default function Homepage() {
             <span>commits</span>
           </p>
         </div>
-      </footer>
+      </div>
     </>
   );
 }

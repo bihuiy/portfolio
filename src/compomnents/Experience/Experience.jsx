@@ -16,17 +16,18 @@ export default function Experience() {
           <div>Remote</div>
         </div>
         <div>
-          • Built and deployed four projects, two of which are full-stack
-          applications. Utilised agile methodologies to work as part of a team
-          to deliver a product in short sprints
+          • Developed and deployed four projects, including three full-stack
+          applications, through individual and team-based sprints using Agile
+          methodologies
         </div>
         <div>
-          • Covered the fundamentals of front-end and back-end engineering, with
-          an introduction to best practice priciples such as SOLID, DRY, OOP and
-          FOP
+          • Participated in daily stand-ups, labs, and collaborative development
+          processes to enhance both front-end and back-end programming
+          proficiency as well as teamwork skills
         </div>
         <div>
-          • Tech stack: React, SASS, MongoExpress, Node.js, Django, PostgreSQL
+          • Tech stack: React, JavaScript, HTML, CSS, Python, Django, Node.js,
+          Express, MongoDB, PostgreSQL
         </div>
       </div>
       <div className="experience-item">
@@ -82,7 +83,8 @@ export default function Experience() {
           alignment and knowledge sharing
         </div>
         <div>
-          • Tech stack: React, SASS, MongoExpress, Node.js, Django, PostgreSQL
+          • Skills: Project management, Communication, Problem solving,
+          Stakeholder management
         </div>
       </div>
       <div className="experience-item">
@@ -102,9 +104,7 @@ export default function Experience() {
           • Set up hardware, upgraded software, and resolved technical issues to
           ensure operational efficiency
         </div>
-        <div>
-          • Tech stack: React, SASS, MongoExpress, Node.js, Django, PostgreSQL
-        </div>
+        <div>• Skills: Communication, Customer service, Problem solving</div>
       </div>
     </div>
   );

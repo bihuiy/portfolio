@@ -2,7 +2,7 @@
     padding: 40px 20%;
     display: flex;
     justify-content: space-between;
-    color: #666;
+    color: #4b5563;
 }
 
 .project-detail {
@@ -19,8 +19,12 @@
 
 .project-detail a {
     margin-right: 2rem;
-    color: #666;
+    color: #4b5563;
     font-size: 2rem;
+}
+
+.project-detail a:hover {
+    color: #739aa6
 }
 
 .project-item {
@@ -31,7 +35,14 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 8.5rem;
+    margin-top: 5.5rem;
+}
+
+.project-video {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 .project-buttons {
@@ -41,5 +52,11 @@
 
 .project-display button {
     margin: 8px;
+    border: none;
+    font-size: 1.5rem;
+    color: #4b5563;
+}
 
+.project-display button:hover {
+    color: #739aa6;
 }

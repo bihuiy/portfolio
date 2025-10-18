@@ -9,23 +9,11 @@ export default function Education() {
           <div className="education-major">
             Software Engineering Immersive Course
           </div>
-          <div>Jun 2025 - Sep 2025</div>
+          <div>2025</div>
         </div>
         <div className="education-line-two">
           <div>General Assembly</div>
           <div>Remote</div>
-        </div>
-        <div>
-          <div>
-            • 12-week immersive program where I furthered my programming
-            knowledge, focusing on JavaScript, React.js, Python, Django,
-            MongoDB, HTML, and CSS
-          </div>
-          <div>
-            • Gained hands-on experience building full-stack applications
-            through individual and group projects, labs, online lessons, and
-            daily stand-ups, developing both technical and collaborative skills
-          </div>
         </div>
       </div>
       <div className="education-item">
