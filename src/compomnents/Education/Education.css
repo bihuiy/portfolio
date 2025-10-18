@@ -4,19 +4,32 @@
 }
 
 .education-item {
+    display: flex;
     margin-bottom: 35px;
+    justify-content: space-between;
 }
 
-.education-line-one, .education-line-two {
+.education-item img{
+    width: 70px;
+    margin-right: 20px;
+    border-radius: 20%;
+}
+
+.education-detail {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.education-col-one, .education-col-two {
     font-size: 1.2rem;
 }
 
-.education-line-two {
-    color: #739aa6;
+.education-major, .education-time {
+    font-weight: 500;
 }
 
-.education-line-one {
-    font-weight: 500;
+.education-col-two {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }

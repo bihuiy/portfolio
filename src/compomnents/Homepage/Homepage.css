@@ -16,7 +16,7 @@
   }
   
   .highlight {
-    color: #739aa6;
+    color: #7acf98;
   }
   
   .description {
@@ -33,18 +33,17 @@
   }
   
   .download-btn {
-    background-color: #739aa6;
-    color: #252525;
+    background-color: #7acf98;
+    color: #4b5563;
     padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 8px;
     font-weight: bold;
     font-size: 1.2rem;
-    cursor: pointer;
   }
   
   .socials a {
-    color: #252525;
+    color: #4b5563;
     font-size: 1.5rem;
     margin-right: 1rem;
     text-decoration: none;
@@ -55,7 +54,7 @@
   }
 
   .socials a:hover {
-    color: #739aa6;
+    color: #7acf98;
   }
 
   .hero-right {
@@ -72,36 +71,12 @@
     justify-content: center;
     align-items: center;
   } 
-
-  /* .avatar-wrapper {
-    position: relative;
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    background-color: #F1EEE9;
-    overflow: hidden;
-  } */
   
   .avatar {
     width: 400px;
     height: 400px;
-    background-color: #F1EEE9;
     border-radius: 50%;
   }
-
-/*   .avatar-border::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: 5px dashed #739aa6; 
-    border-radius: 50%;
-    animation: rotateBorder 20s linear infinite;
-  } */
-  
- /*  @keyframes rotateBorder {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  } */
   
 .label {
     display: flex;

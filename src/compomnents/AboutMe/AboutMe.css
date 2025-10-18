@@ -9,14 +9,14 @@
 
 .about-me-title button {
     margin: 0 20px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     background-color: #F1EEE9;
-    color: #666;
+    color: #4b5563;
     border: none;
 }
 
 .about-me-title button:hover {
-    color: #739aa6;
+    color: #7acf98;
 }
 
 .about-me-description {

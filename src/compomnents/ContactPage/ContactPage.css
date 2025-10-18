@@ -2,7 +2,24 @@
     padding: 60px 20%;
 }
 
+.contact-bio h2 {
+    font-weight: 400;
+}
+
 .contact-details {
     display: flex;
-    gap: 1rem;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    gap: 1rem
 }
+
+.contact-item:hover {
+    background-color: #7acf98;
+    border-radius: 15px;
+    padding: 4px;
+  }
+  
+  .contact-item a {
+    color: #4b5563; 
+    text-decoration: none;
+  }

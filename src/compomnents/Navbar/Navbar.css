@@ -1,4 +1,4 @@
-header {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +9,8 @@ header {
     display: flex;
     align-items: center;
     gap: 60px;
+    border-radius: 20px;
+    padding: 8px;
 }
 
 .nav-links a {
@@ -17,8 +19,11 @@ header {
     font-size: 1.5rem;
 }
 
-.nav-links a:hover {
-    color: #739aa6;
+.nav-links a:hover, .nav-links a.active {
+    background-color: #7acf98;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .logo-title {

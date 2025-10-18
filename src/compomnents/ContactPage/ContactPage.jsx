@@ -6,12 +6,13 @@ import "./ContactPage.css";
 export default function ContactPage() {
   return (
     <div className="contact">
-      <div className="short-bio">
-        <p>
-          Hi! Want to have a chat? Send me an email or message me on LinkedIn -
-          I usually reply within 24 hours! I'm currently open to full-time and
-          freelance opportunities as a junior web engineer
-        </p>
+      <div className="contact-bio">
+        <h2>Thanks for stopping by and exploring my work!</h2>
+        <h2>
+          If you'd like to connect or chat about developer opportunities, feel
+          free to reach out using the links below. I'm currently open to
+          full-time and freelance opportunities as a junior web engineer.
+        </h2>
       </div>
       <div className="contact-details">
         <div className="contact-item">
