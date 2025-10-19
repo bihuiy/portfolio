@@ -16,11 +16,11 @@
   }
   
   .highlight {
-    color: #7acf98;
+    color: #22c55e;
   }
   
   .description {
-    color: #888;
+    color: #4b5563;
     font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -33,7 +33,7 @@
   }
   
   .download-btn {
-    background-color: #7acf98;
+    background-color: #22c55e;
     color: #4b5563;
     padding: 0.8rem 1.2rem;
     border: none;
@@ -55,7 +55,7 @@
   }
 
   .socials a:hover {
-    color: #7acf98;
+    color: #22c55e;
   }
 
   .hero-right {

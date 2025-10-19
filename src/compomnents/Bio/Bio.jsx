@@ -1,7 +1,5 @@
 import { useState } from "react";
 import "./Bio.css";
-import { IoMdArrowDropleftCircle } from "react-icons/io";
-import { IoMdArrowDroprightCircle } from "react-icons/io";
 
 export default function AboutMe() {
   const bios = [
@@ -66,26 +64,26 @@ export default function AboutMe() {
 
   const [bioIndex, setBioIndex] = useState(0);
   const currentBio = bios[bioIndex];
+  const totalPage = bios.length;
 
-  const handlePrev = () => {
-    setBioIndex((prev) => (prev === 0 ? bios.length - 1 : prev - 1));
+  const handleClick = (index) => {
+    setBioIndex(index);
   };
 
-  const handleNext = () => {
-    setBioIndex((prev) => (prev === bios.length - 1 ? 0 : prev + 1));
-  };
+  let dots = [];
+  for (let i = 0; i < totalPage; i++) {
+    dots.push(
+      <span
+        className={i === bioIndex ? "dot active" : "dot"}
+        key={i}
+        onClick={() => handleClick(i)}
+      ></span>
+    );
+  }
 
   return (
     <div className="about-me" key={currentBio.id}>
-      <h1 className="about-me-title">
-        <button onClick={handlePrev}>
-          <IoMdArrowDropleftCircle />
-        </button>
-        {currentBio.title}
-        <button onClick={handleNext}>
-          <IoMdArrowDroprightCircle />
-        </button>
-      </h1>
+      <h1 className="about-me-title">{currentBio.title}</h1>
       <div className="about-me-description">
         {currentBio.description.map((item, index) => (
           <div key={index} className="about-me-item">
@@ -93,6 +91,7 @@ export default function AboutMe() {
           </div>
         ))}
       </div>
+      <div className="pagination-dots">{dots}</div>
       <div>
         {currentBio.video1 && (
           <video

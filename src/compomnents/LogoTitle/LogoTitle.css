@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid #7acf98;
+    border: 2px solid #22c55e;
     border-radius: 1rem;
     padding: 1rem;
     box-sizing: border-box;
@@ -17,7 +17,7 @@
     justify-content: flex-start;
     align-items: center;
     border-radius: 12px;
-    color: #7acf98;
+    color: #22c55e;
 }
 
 .flashing-title {

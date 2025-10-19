@@ -4,7 +4,6 @@ import { IoMdArrowDropleftCircle } from "react-icons/io";
 import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { BsArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import Footer from "../Footer/Footer";
 
 export default function ProjectPage() {
   const projects = [
@@ -12,9 +11,11 @@ export default function ProjectPage() {
       id: 1,
       title: "Petrol Spy",
       subtitle: "Full Stack Petrol Price Tracking Web Application",
-      githubFrontend: "",
-      githubBackend: "",
-      date: "27th Aug - 5th Sep 2025 | Solo Project",
+      deployLink: "http://petrolspy.netlify.app/",
+      githubFrontend: "https://github.com/bihuiy/petrol-spy-frontend",
+      githubBackend: "https://github.com/bihuiy/petrol-spy-backend",
+      date: "27th Aug - 5th Sep 2025",
+      type: "Solo Project",
       description: [
         "Designed and developed a full-stack web application that helps users track real-time petrol prices and manage their favorite stations.",
         "Integrated the free Petrol Stations API provided by the NSW Government.",
@@ -27,9 +28,11 @@ export default function ProjectPage() {
       id: 2,
       title: "Amplify",
       subtitle: "Full Stack Music Player Web Application",
-      githubFrontend: "",
-      githubBackend: "",
-      date: "7th Aug - 18th Aug 2025 | Pair Project",
+      deployLink: "http://amplify-zone.netlify.app/",
+      githubFrontend: "https://github.com/bihuiy/Music-Player-FrontEnd",
+      githubBackend: "https://github.com/bihuiy/Music-Player-api",
+      date: "7th Aug - 18th Aug 2025",
+      type: "Pair Project",
       description: [
         "Designed and developed a full-stack web application that allows users to discover, listen to, and manage playlists and songs.",
         "This is a group project completed by two people. I contributed mainly to the Homepage, Song, and Profile features.",
@@ -42,9 +45,11 @@ export default function ProjectPage() {
       id: 3,
       title: "MusicMood",
       subtitle: "Full Stack Music Playlist Web Application",
-      githubFrontend: "",
+      deployLink: "https://mymusicmood.netlify.app/",
+      githubFrontend: "https://github.com/bihuiy/MusicMood",
       githubBackend: "",
-      date: "18th Jul - 25th Jul 2025 | Solo Project",
+      date: "18th Jul - 25th Jul 2025",
+      type: "Solo Project",
       description: [
         "Designed and developed a full-stack CRUD application that creates an immersive space where users can share their emotional experiences and feelings about the music they love.",
         "Implemented with secure user authentication, interactive playlists, and relational database design to manage user-generated content efficiently",
@@ -57,9 +62,11 @@ export default function ProjectPage() {
       id: 4,
       title: "Frogger",
       subtitle: "Browser-based Frogger-style Arcade Action Game",
-      githubFrontend: "",
+      deployLink: "http://bihuiy.github.io/Frogger/",
+      githubFrontend: "https://github.com/bihuiy/Frogger",
       githubBackend: "",
-      date: "27th Jun - 4th Jul 2025 | Solo Project",
+      date: "27th Jun - 4th Jul 2025",
+      type: "Solo Project",
       description: [
         "Designed and developed a browser-based game that allows users to use arrow keys to move the frogs to their homes by avoiding cars and jumping on logs.",
         "Built this game as my first project in the General Assembly Software Engineering Bootcamp, applying JavaScript DOM manipulation and JavaScript Array Iterator Methods.",
@@ -72,61 +79,68 @@ export default function ProjectPage() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentProject = projects[currentIndex];
+  const totalProject = projects.length;
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+  const handleClick = (index) => {
+    setCurrentIndex(index);
   };
 
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
-  };
+  let dots = [];
+  for (let i = 0; i < totalProject; i++) {
+    dots.push(
+      <span
+        className={i === currentIndex ? "dot active" : "dot"}
+        key={i}
+        onClick={() => handleClick(i)}
+      ></span>
+    );
+  }
 
   return (
-    <>
-      <div className="project-container">
-        <div className="project-detail">
+    <div className="project-container">
+      <div className="project-detail">
+        <div className="project-title">
           <h1>{`0${currentProject.id}`}</h1>
           <h2>{currentProject.title}</h2>
-          <h3>{currentProject.subtitle}</h3>
-          <p>{currentProject.githubFrontend}</p>
-          <p>{currentProject.githubBackend}</p>
-          <p>{currentProject.date}</p>
-          <ul>
-            {currentProject.description.map((item, index) => (
-              <li key={index} className="project-item">
-                {item}
-              </li>
-            ))}
-          </ul>
-          <h4>{currentProject.technology}</h4>
-          <a href="http://petrolspy.netlify.app/">
-            <BsArrowUpRight />
-          </a>
-          <a href="https://github.com/bihuiy">
+        </div>
+        <h3>{currentProject.subtitle}</h3>
+        <p>
+          {currentProject.date}
+          <span className="type">{currentProject.type}</span>
+        </p>
+        <ul>
+          {currentProject.description.map((item, index) => (
+            <li key={index} className="project-item">
+              {item}
+            </li>
+          ))}
+        </ul>
+        <h4>{currentProject.technology}</h4>
+        <a href={currentProject.deployLink} target="_blank">
+          <BsArrowUpRight />
+        </a>
+        <a href={currentProject.githubFrontend} target="_blank">
+          <FaGithub />
+        </a>
+        {currentProject.githubBackend && (
+          <a href={currentProject.githubBackend} target="_blank">
             <FaGithub />
           </a>
-        </div>
-        <div className="project-display">
-          <video
-            key={currentProject.id}
-            controls
-            autoPlay
-            muted
-            playsInline
-            className="project-video"
-          >
-            <source src={currentProject.video} type="video/mp4" />
-          </video>
-          <div className="project-buttons">
-            <button onClick={handlePrev}>
-              <IoMdArrowDropleftCircle />
-            </button>
-            <button onClick={handleNext}>
-              <IoMdArrowDroprightCircle />
-            </button>
-          </div>
-        </div>
+        )}
       </div>
-    </>
+      <div className="project-display">
+        <video
+          key={currentProject.id}
+          controls
+          autoPlay
+          muted
+          playsInline
+          className="project-video"
+        >
+          <source src={currentProject.video} type="video/mp4" />
+        </video>
+        <div className="pagination-dots">{dots}</div>
+      </div>
+    </div>
   );
 }

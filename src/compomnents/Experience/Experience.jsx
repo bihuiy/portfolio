@@ -77,8 +77,8 @@ export default function Experience() {
     <>
       <h1 className="experience-title">My Experience</h1>
       {experience.map((item) => (
-        <div className="experience-item">
-          <div key={item.id} className="experience-line-one">
+        <div key={item.id} className="experience-item">
+          <div className="experience-line-one">
             <div className="experience-role">{item.role}</div>
             <div className="experience-time">{item.time}</div>
           </div>
@@ -86,7 +86,7 @@ export default function Experience() {
             <div>{item.company}</div>
             <div>{item.location}</div>
           </div>
-          <ul>
+          <ul className="experience-details">
             {item.description.map((d, index) => (
               <li key={index}>{d}</li>
             ))}

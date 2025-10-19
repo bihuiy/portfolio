@@ -1,6 +1,7 @@
 .experience-title {
     text-align: center;
     margin-bottom: 35px;
+    margin-top: 0;
 }
 
 .experience-item {
@@ -15,7 +16,11 @@
 }
 
 .experience-line-two {
-    color: #7acf98;
+    color: #22c55e;
+}
+
+.experience-details {
+    border-left: 3px solid #22c55e;
 }
 
 @media (min-width: 319px) and (max-width: 480px) {
@@ -25,7 +30,7 @@
 }
 .experience-title {
     margin-bottom: 15px;
+    margin-top: 15px;
 }
-
 
 }

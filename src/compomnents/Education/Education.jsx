@@ -38,7 +38,7 @@ export default function Education() {
     <div className="education">
       <h1 className="education-title">Education</h1>
       {education.map((item) => (
-        <div className="education-item">
+        <div key={item.id} className="education-item">
           <div className="education-detail">
             <img src={item.logo} alt={item.alt} />
             <div className="education-col-one">
@@ -48,7 +48,7 @@ export default function Education() {
           </div>
           <div className="education-col-two">
             <div className="education-time">{item.time}</div>
-            <div>{item.location}</div>
+            <div className="education-location">{item.location}</div>
           </div>
         </div>
       ))}

@@ -39,6 +39,7 @@ export default function ResumePage() {
         ))}
       </div>
       <div className="resume-content">{renderContent()}</div>
+      <div></div>
     </div>
   );
 }

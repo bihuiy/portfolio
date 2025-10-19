@@ -1,23 +1,11 @@
 .about-me-title {
     text-align: center;
     margin-bottom: 35px;
+    margin-top: 0;
 }
 
 .about-me-item {
     margin-bottom: 15px;
-}
-
-.about-me-title button {
-    margin: 0 20px;
-    font-size: 1.6rem;
-    background-color: #F1EEE9;
-    color: #4b5563;
-    border: none;
-}
-
-.about-me-title button:hover {
-    color: #7acf98;
-    cursor: pointer;
 }
 
 .about-me-description {
@@ -31,4 +19,38 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     object-fit: cover;
+}
+
+.pagination-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #cfcbcb;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot:hover {
+    cursor: pointer;
+  }
+
+  .dot.active {
+    width: 14px;
+    height: 14px;
+    background-color: #22c55e;
+  }
+  
+@media (min-width: 319px) and (max-width: 480px) {
+    .about-me-title {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
 }

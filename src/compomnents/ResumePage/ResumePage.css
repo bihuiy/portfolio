@@ -23,13 +23,13 @@
   }
   
   .resume-tab:hover {
-    color: #7acf98;
+    color: #22c55e;
   }
   
   .resume-tab.active {
-    color: #7acf98;
+    color: #22c55e;
     font-weight: 600;
-    border-left: 3px solid #7acf98;
+    border-left: 3px solid #22c55e;
     padding-left: 10px;
   }
   

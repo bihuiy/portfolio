@@ -9,12 +9,16 @@
     max-width: 48%;
 }
 
+.type {
+    margin-left: 1rem;
+}
+
 .project-detail h1 {
     font-size: 3.5rem;
 }
 
 .project-detail h2, .project-detail h4 {
-    color: #7acf98;
+    color: #22c55e;
 }
 
 .project-detail a {
@@ -24,7 +28,7 @@
 }
 
 .project-detail a:hover {
-    color: #7acf98
+    color: #22c55e
 }
 
 .project-item {
@@ -45,19 +49,51 @@
     object-fit: cover;
 }
 
-.project-buttons {
+.pagination-dots {
     display: flex;
+    gap: 8px;
     justify-content: center;
-}
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
-.project-display button {
-    margin: 8px;
-    border: none;
-    font-size: 2rem;
-    color: #4b5563;
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #cfcbcb;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot:hover {
     cursor: pointer;
-}
+  }
 
-.project-display button:hover {
-    color: #7acf98;
-}
+  .dot.active {
+    width: 14px;
+    height: 14px;
+    background-color: #22c55e;
+  }
+
+  @media (min-width: 319px) and (max-width: 480px) {
+    .project-container {
+        padding: 40px 5%;
+        flex-direction: column;
+    }
+    .project-detail {
+        max-width: 100%;
+    }
+    .project-title {
+        display: flex;
+        font-size: 1.5rem;
+    }
+    .project-detail h1 {
+        font-size: 2.5rem;
+        margin-right: 2rem;
+    }
+    .project-display {
+        width: 100%;
+        margin-top: 1rem;
+    }
+  }
