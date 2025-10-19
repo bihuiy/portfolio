@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./AboutMe.css";
+import "./Bio.css";
 import { IoMdArrowDropleftCircle } from "react-icons/io";
 import { IoMdArrowDroprightCircle } from "react-icons/io";
 

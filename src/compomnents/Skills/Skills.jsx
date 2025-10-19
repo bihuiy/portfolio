@@ -14,62 +14,32 @@ import { GrHeroku } from "react-icons/gr";
 import { SiNetlify } from "react-icons/si";
 
 export default function Skills() {
+  const skills = [
+    { icon: <FaReact />, name: "React.js" },
+    { icon: <BiLogoJavascript />, name: "JavaScript" },
+    { icon: <FaHtml5 />, name: "HTML" },
+    { icon: <FaCss3Alt />, name: "CSS" },
+    { icon: <FaPython />, name: "Python" },
+    { icon: <DiDjango />, name: "Django" },
+    { icon: <IoLogoNodejs />, name: "Node.js" },
+    { icon: <SiExpress />, name: "Express" },
+    { icon: <DiMongodb />, name: "MongoDB" },
+    { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
+    { icon: <FaGithub />, name: "GitHub" },
+    { icon: <GrHeroku />, name: "Heroku" },
+    { icon: <SiNetlify />, name: "Netlify" },
+  ];
+
   return (
     <div className="skills">
       <h1 className="skills-title">My Skills</h1>
       <div className="skills-grid">
-        <div className="skill-item">
-          <FaReact />
-          <p>React.js</p>
-        </div>
-        <div className="skill-item">
-          <BiLogoJavascript />
-          <p>JavaScript</p>
-        </div>
-        <div className="skill-item">
-          <FaHtml5 />
-          <p>HTML</p>
-        </div>
-        <div className="skill-item">
-          <FaCss3Alt />
-          <p>CSS</p>
-        </div>
-        <div className="skill-item">
-          <FaPython />
-          <p>Python</p>
-        </div>
-        <div className="skill-item">
-          <DiDjango />
-          <p>Django</p>
-        </div>
-        <div className="skill-item">
-          <IoLogoNodejs />
-          <p>Node.js</p>
-        </div>
-        <div className="skill-item">
-          <SiExpress />
-          <p>Express</p>
-        </div>
-        <div className="skill-item">
-          <DiMongodb />
-          <p>MongoDB</p>
-        </div>
-        <div className="skill-item">
-          <BiLogoPostgresql />
-          <p>PostgreSQL</p>
-        </div>
-        <div className="skill-item">
-          <FaGithub />
-          <p>GitHub</p>
-        </div>
-        <div className="skill-item">
-          <GrHeroku />
-          <p>Heroku</p>
-        </div>
-        <div className="skill-item">
-          <SiNetlify />
-          <p>Netlify</p>
-        </div>
+        {skills.map((skill) => (
+          <div className="skill-item">
+            {skill.icon}
+            <p>{skill.name}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

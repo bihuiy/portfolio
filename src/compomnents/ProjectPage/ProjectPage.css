@@ -55,6 +55,7 @@
     border: none;
     font-size: 2rem;
     color: #4b5563;
+    cursor: pointer;
 }
 
 .project-display button:hover {

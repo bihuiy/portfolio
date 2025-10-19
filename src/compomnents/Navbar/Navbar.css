@@ -29,3 +29,16 @@ nav {
 .logo-title {
     margin-top: 10px;
 }
+
+@media (min-width: 319px) and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+    .nav-links {
+        gap: 10px;
+        margin: 15px 0;
+    }
+    .logo-title {
+        order: 2;
+      }
+  }

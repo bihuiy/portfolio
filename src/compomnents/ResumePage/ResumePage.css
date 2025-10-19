@@ -40,3 +40,20 @@
     line-height: 1.8;
   }
   
+  @media (min-width: 319px) and (max-width: 480px) {
+    .resume {
+      flex-direction: column;
+      padding: 10% 5%;
+      align-items: center;
+    }
+    .resume-sidebar {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .resume-tab.active {
+      border-left: none;      
+    }
+    .resume-content {
+      padding-left: 0;
+    }
+  }

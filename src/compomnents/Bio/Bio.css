@@ -17,6 +17,7 @@
 
 .about-me-title button:hover {
     color: #7acf98;
+    cursor: pointer;
 }
 
 .about-me-description {

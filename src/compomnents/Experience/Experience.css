@@ -17,3 +17,15 @@
 .experience-line-two {
     color: #7acf98;
 }
+
+@media (min-width: 319px) and (max-width: 480px) {
+.experience-line-one, .experience-line-two {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.experience-title {
+    margin-bottom: 15px;
+}
+
+
+}

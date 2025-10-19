@@ -3,12 +3,12 @@ import "./ResumePage.css";
 import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
 import Skills from "../Skills/Skills";
-import AboutMe from "../AboutMe/AboutMe";
+import Bio from "../Bio/Bio";
 
 export default function ResumePage() {
   const [activeSection, setActiveSection] = useState("Experience");
 
-  const sections = ["Experience", "Skills", "Education", "About me"];
+  const sections = ["Experience", "Skills", "Education", "Bio"];
 
   const renderContent = () => {
     switch (activeSection) {
@@ -18,13 +18,13 @@ export default function ResumePage() {
         return <Skills />;
       case "Education":
         return <Education />;
-      case "About me":
-        return <AboutMe />;
+      case "Bio":
+        return <Bio />;
     }
   };
 
   return (
-    <section className="resume">
+    <div className="resume">
       <div className="resume-sidebar">
         {sections.map((section) => (
           <button
@@ -39,6 +39,6 @@ export default function ResumePage() {
         ))}
       </div>
       <div className="resume-content">{renderContent()}</div>
-    </section>
+    </div>
   );
 }
