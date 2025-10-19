@@ -36,6 +36,7 @@
     border-radius: 50%;
     background-color: #cfcbcb;
     transition: background-color 0.3s ease;
+    margin-right: 0.4rem;
   }
   
   .dot:hover {
@@ -46,6 +47,17 @@
     width: 14px;
     height: 14px;
     background-color: #22c55e;
+  }
+
+  .about-me {
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .about-me.active {
+    opacity: 1;
+    transform: translateY(0);
   }
   
 @media (min-width: 319px) and (max-width: 480px) {

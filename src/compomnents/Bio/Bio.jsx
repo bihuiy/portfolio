@@ -65,9 +65,16 @@ export default function AboutMe() {
   const [bioIndex, setBioIndex] = useState(0);
   const currentBio = bios[bioIndex];
   const totalPage = bios.length;
+  const [animating, setAnimating] = useState(false);
 
   const handleClick = (index) => {
     setBioIndex(index);
+    setAnimating(true);
+
+    setTimeout(() => {
+      setBioIndex(index);
+      setAnimating(false);
+    }, 300);
   };
 
   let dots = [];
@@ -82,7 +89,10 @@ export default function AboutMe() {
   }
 
   return (
-    <div className="about-me" key={currentBio.id}>
+    <div
+      key={currentBio.id}
+      className={`about-me ${animating ? "" : "active"}`}
+    >
       <h1 className="about-me-title">{currentBio.title}</h1>
       <div className="about-me-description">
         {currentBio.description.map((item, index) => (

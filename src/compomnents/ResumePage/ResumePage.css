@@ -40,6 +40,17 @@
     line-height: 1.8;
   }
   
+  .resume-content {
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .resume-content.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   @media (min-width: 319px) and (max-width: 480px) {
     .resume {
       flex-direction: column;

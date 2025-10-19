@@ -7,6 +7,7 @@ import Bio from "../Bio/Bio";
 
 export default function ResumePage() {
   const [activeSection, setActiveSection] = useState("Experience");
+  const [animating, setAnimating] = useState(false);
 
   const sections = ["Experience", "Skills", "Education", "Bio"];
 
@@ -23,6 +24,16 @@ export default function ResumePage() {
     }
   };
 
+  const handleClick = (section) => {
+    setActiveSection(section);
+    setAnimating(true);
+
+    setTimeout(() => {
+      setActiveSection(section);
+      setAnimating(false);
+    }, 300);
+  };
+
   return (
     <div className="resume">
       <div className="resume-sidebar">
@@ -32,13 +43,15 @@ export default function ResumePage() {
             className={`resume-tab ${
               activeSection === section ? "active" : ""
             }`}
-            onClick={() => setActiveSection(section)}
+            onClick={() => handleClick(section)}
           >
             {section}
           </button>
         ))}
       </div>
-      <div className="resume-content">{renderContent()}</div>
+      <div className={`resume-content ${animating ? "" : "active"}`}>
+        {renderContent()}
+      </div>
       <div></div>
     </div>
   );

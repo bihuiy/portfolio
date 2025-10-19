@@ -1,7 +1,5 @@
 import { useState } from "react";
 import "./ProjectPage.css";
-import { IoMdArrowDropleftCircle } from "react-icons/io";
-import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { BsArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 
@@ -80,9 +78,16 @@ export default function ProjectPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentProject = projects[currentIndex];
   const totalProject = projects.length;
+  const [animating, setAnimating] = useState(false);
 
   const handleClick = (index) => {
     setCurrentIndex(index);
+    setAnimating(true);
+
+    setTimeout(() => {
+      setCurrentIndex(index);
+      setAnimating(false);
+    }, 300);
   };
 
   let dots = [];
@@ -98,7 +103,7 @@ export default function ProjectPage() {
 
   return (
     <div className="project-container">
-      <div className="project-detail">
+      <div className={`project-detail ${animating ? "" : "active"}`}>
         <div className="project-title">
           <h1>{`0${currentProject.id}`}</h1>
           <h2>{currentProject.title}</h2>
@@ -128,14 +133,14 @@ export default function ProjectPage() {
           </a>
         )}
       </div>
-      <div className="project-display">
+      <div className={`project-display ${animating ? "" : "active"}`}>
         <video
           key={currentProject.id}
           controls
           autoPlay
           muted
           playsInline
-          className="project-video"
+          className={`project-video ${animating ? "" : "active"}`}
         >
           <source src={currentProject.video} type="video/mp4" />
         </video>
