@@ -17,7 +17,7 @@ export default function ContactPage() {
       <div className="contact-details">
         <div className="contact-item">
           <MdEmail />
-          <a href="bihuiy7@gmail.com" target="_blank">
+          <a href="mailto:bihuiy7@gmail.com">
             bihuiy7@gmail.com
           </a>
         </div>
