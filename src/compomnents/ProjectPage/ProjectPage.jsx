@@ -145,9 +145,9 @@ export default function ProjectPage() {
           >
             <source src={currentProject.video} type="video/mp4" />
           </video>
+          <div className="pagination-dots">{dots}</div>
         </div>
       </div>
-      <div className="pagination-dots">{dots}</div>
     </>
   );
 }
