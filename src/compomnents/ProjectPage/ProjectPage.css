@@ -1,5 +1,5 @@
 .project-container {
-    padding: 40px 20%;
+    padding: 40px 20% 0 20%;
     display: flex;
     justify-content: space-between;
     color: #4b5563;
@@ -57,6 +57,11 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  .pagination-dots {
+    position: fixed;
+    bottom: 300px;
+    left: 45%;
+  }
 
   .dot {
     width: 12px;
@@ -106,5 +111,42 @@
     .project-display {
         width: 100%;
         margin-top: 1rem;
+    }
+    .pagination-dots {
+        position: fixed;
+        bottom: 10px;
+        left: 35%;
+      }
+  }
+  @media (min-width: 481px) and (max-width: 1200px) {
+    .project-container {
+        padding: 40px 5%;
+        flex-direction: column;
+    }
+    .project-detail {
+        max-width: 100%;
+    }
+    .project-title {
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+    .project-detail h1 {
+        font-size: 2.5rem;
+        margin-right: 2rem;
+    }
+    .project-display {
+        width: 80%; 
+        margin-top: 1rem;
+        margin-left: 4rem;
+    }
+    .pagination-dots {
+        bottom: 200px;
+        left: 43%;
+      }
+  }
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    .project-container {
+        padding: 5% 10% 0 10%;
     }
   }

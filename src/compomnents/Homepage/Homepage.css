@@ -122,15 +122,42 @@
   }
   .label {
     flex-direction: column;
-}
-.label-detail {
-  margin-bottom: 15px;
-}
+  }
+  .label-detail {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1200px) {
-  
+  .hero {
+    flex-direction: column;
+    padding: 5%;
+  }
+  .hero-left {
+    max-width: none;
+    width: 100%;
+  }
+  .avatar {
+    width: 330px;
+    height: 350px;
+  }
+  .label {
+    padding: 2% 7%;
+  }
 }
 @media (min-width: 1201px) and (max-width: 1600px) {
-  
+  .hero {
+    padding: 5% 10%;
+  }
+  .hero-left {
+    max-width: none;
+    width: 100%;
+  }
+  .avatar {
+    width: 350px;
+    height: 350px;
+  }
+  .label {
+    padding: 0 10% 2% 10%;
+  }
 }

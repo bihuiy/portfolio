@@ -21,7 +21,7 @@
     object-fit: cover;
 }
 
-.pagination-dots {
+.bio-pagination-dots {
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -65,4 +65,10 @@
         margin-bottom: 15px;
         margin-top: 15px;
     }
+}
+@media (min-width: 481px) and (max-width: 1200px) {
+  .about-me-title {
+      margin-bottom: 15px;
+      margin-top: 15px;
+  }
 }

@@ -68,3 +68,35 @@
       padding-left: 0;
     }
   }
+
+  @media (min-width: 481px) and (max-width: 1200px) {
+    .resume {
+      flex-direction: column;
+      padding: 5%;
+      align-items: center;
+    }
+    .resume-sidebar {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .resume-tab.active {
+      border-left: none;      
+    }
+    .resume-content {
+      padding-left: 0;
+    }
+    .resume-tab {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    .resume {
+      padding: 5% 10%;
+    }
+    .resume-content {
+      padding-left: 0;
+    }
+    .resume-tab {
+      font-size: 1.5rem;
+    }
+  }

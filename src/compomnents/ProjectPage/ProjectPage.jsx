@@ -102,50 +102,52 @@ export default function ProjectPage() {
   }
 
   return (
-    <div className="project-container">
-      <div className={`project-detail ${animating ? "" : "active"}`}>
-        <div className="project-title">
-          <h1>{`0${currentProject.id}`}</h1>
-          <h2>{currentProject.title}</h2>
-        </div>
-        <h3>{currentProject.subtitle}</h3>
-        <p>
-          {currentProject.date}
-          <span className="type">{currentProject.type}</span>
-        </p>
-        <ul>
-          {currentProject.description.map((item, index) => (
-            <li key={index} className="project-item">
-              {item}
-            </li>
-          ))}
-        </ul>
-        <h4>{currentProject.technology}</h4>
-        <a href={currentProject.deployLink} target="_blank">
-          <BsArrowUpRight />
-        </a>
-        <a href={currentProject.githubFrontend} target="_blank">
-          <FaGithub />
-        </a>
-        {currentProject.githubBackend && (
-          <a href={currentProject.githubBackend} target="_blank">
+    <>
+      <div className="project-container">
+        <div className={`project-detail ${animating ? "" : "active"}`}>
+          <div className="project-title">
+            <h1>{`0${currentProject.id}`}</h1>
+            <h2>{currentProject.title}</h2>
+          </div>
+          <h3>{currentProject.subtitle}</h3>
+          <p>
+            {currentProject.date}
+            <span className="type">{currentProject.type}</span>
+          </p>
+          <ul>
+            {currentProject.description.map((item, index) => (
+              <li key={index} className="project-item">
+                {item}
+              </li>
+            ))}
+          </ul>
+          <h4>{currentProject.technology}</h4>
+          <a href={currentProject.deployLink} target="_blank">
+            <BsArrowUpRight />
+          </a>
+          <a href={currentProject.githubFrontend} target="_blank">
             <FaGithub />
           </a>
-        )}
+          {currentProject.githubBackend && (
+            <a href={currentProject.githubBackend} target="_blank">
+              <FaGithub />
+            </a>
+          )}
+        </div>
+        <div className={`project-display ${animating ? "" : "active"}`}>
+          <video
+            key={currentProject.id}
+            controls
+            autoPlay
+            muted
+            playsInline
+            className={`project-video ${animating ? "" : "active"}`}
+          >
+            <source src={currentProject.video} type="video/mp4" />
+          </video>
+        </div>
       </div>
-      <div className={`project-display ${animating ? "" : "active"}`}>
-        <video
-          key={currentProject.id}
-          controls
-          autoPlay
-          muted
-          playsInline
-          className={`project-video ${animating ? "" : "active"}`}
-        >
-          <source src={currentProject.video} type="video/mp4" />
-        </video>
-        <div className="pagination-dots">{dots}</div>
-      </div>
-    </div>
+      <div className="pagination-dots">{dots}</div>
+    </>
   );
 }

@@ -35,3 +35,12 @@
         font-size: 40px;
     }
 }
+@media (min-width: 481px) and (max-width: 1200px) {
+    .skills-title {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .skills-grid {
+        margin-top: 2rem;
+    }
+}

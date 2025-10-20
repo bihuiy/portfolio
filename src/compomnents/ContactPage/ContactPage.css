@@ -26,10 +26,20 @@
 
   @media (min-width: 319px) and (max-width: 480px) {
     .contact {
-        padding: 10% 5%;
+      padding: 10% 5%;
     }
     .contact-details {
       flex-direction: column;
       align-items: center;
     }
   }
+  @media (min-width: 481px) and (max-width: 1200px) {
+    .contact {
+      padding: 5%;
+    }
+  }
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .contact {
+    padding: 5% 10%;
+  }
+}

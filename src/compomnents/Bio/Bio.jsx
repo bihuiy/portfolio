@@ -101,7 +101,7 @@ export default function AboutMe() {
           </div>
         ))}
       </div>
-      <div className="pagination-dots">{dots}</div>
+      <div className="bio-pagination-dots">{dots}</div>
       <div>
         {currentBio.video1 && (
           <video
