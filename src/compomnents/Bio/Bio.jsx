@@ -50,7 +50,7 @@ export default function AboutMe() {
       id: 4,
       title: "Did you guess it right?",
       description: [
-        `1. This one's true! I did spend a year learning Latin dance and passed my Bronze exam. But to be fair, it's the beginner level. Most of my fellow test-takers were around five years old, and literally everyone passes. Still, I worked really hard… mostly because my instructor said it would look bad on him if I failed.`,
+        `1. This one's true! I did spend a year learning Latin dance and passed my Bronze exam. But to be fair, it's the beginner level. Most of my fellow test-takers were around five years old, and literally everyone passes. Still, I worked really hard… mostly because my instructor said it would look bad on him if I failed 🤣.`,
         `2. Yep, the second one is true. After two years, I've graduated from falling on greens to almost not falling on blues`,
         `3. The third one's true. We had remote classes and they were based in UK. So while it was summer there, it was winter here in Australia. Time zones weren't the only thing that separated us, the seasons did too!`,
         `4. And yes, the last one was the lie 🤣. I don't have a weekly Coke, I actually drink it whenever the mood strikes me, which isn't very often.`,
