@@ -24,6 +24,27 @@
     text-decoration: none;
   }
 
+  .contact-resumes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20%;
+  }
+  
+  .contact-resume-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #4b5563;
+  }
+
+  .contact-resume-item img {
+    width: 60%;
+  }
+  .contact-resume-item img:hover {
+    width: 61%;
+  }
+
   @media (min-width: 319px) and (max-width: 480px) {
     .contact {
       padding: 10% 5%;
@@ -32,10 +53,16 @@
       flex-direction: column;
       align-items: center;
     }
+    .contact-resumes {
+      flex-direction: column;
+    }
   }
   @media (min-width: 481px) and (max-width: 1200px) {
     .contact {
       padding: 5%;
+    }
+    .contact-resumes {
+      flex-direction: column;
     }
   }
 @media (min-width: 1201px) and (max-width: 1600px) {

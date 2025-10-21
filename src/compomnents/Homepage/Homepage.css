@@ -31,6 +31,10 @@
     align-items: center;
     gap: 1rem;
   }
+
+  .buttons a {
+    text-decoration: none;
+  }
   
   .download-btn {
     background-color: #22c55e;

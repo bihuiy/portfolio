@@ -2,7 +2,7 @@ import "./Homepage.css";
 import avatar from "../../assets/avatar.JPG";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { MdDownload } from "react-icons/md";
+import { IoMdCloudDownload } from "react-icons/io";
 
 export default function Homepage() {
   return (
@@ -14,14 +14,19 @@ export default function Homepage() {
           </h2>
 
           <p className="description">
-            I enjoy solving problems through code and building
-            full-stack web applications that bring logic and order to life.
+            I enjoy solving problems through code and building full-stack web
+            applications that bring logic and order to life.
           </p>
 
           <div className="buttons">
-            <button className="download-btn">
-              Download CV <MdDownload />
-            </button>
+            <a
+              href="/VivienYangCV.pdf"
+              download="VivienYangCV"
+              className="download-btn"
+            >
+              Download CV <IoMdCloudDownload />
+            </a>
+
             <div className="socials">
               <a href="https://github.com/bihuiy" target="_blank">
                 GitHub <FaGithub />
