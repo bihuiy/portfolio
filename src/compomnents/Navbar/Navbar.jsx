@@ -16,6 +16,12 @@ export default function Navbar() {
           Home
         </NavLink>
         <NavLink
+          to="/bio"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Bio
+        </NavLink>
+        <NavLink
           to="/resume"
           className={({ isActive }) => (isActive ? "active" : "")}
         >

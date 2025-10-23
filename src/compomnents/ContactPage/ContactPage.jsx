@@ -36,7 +36,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-      <div className="contact-resumes">
+      {/* <div className="contact-resumes">
         <a
           href="/VivienYangDesignCV.pdf"
           download="VivienYangDesignCV"
@@ -53,7 +53,7 @@ export default function ContactPage() {
           <img src={CVSreenshot} alt="CVSreenshot" />
           <p>Click to download PDF</p>
         </a>
-      </div>
+      </div> */}
     </>
   );
 }

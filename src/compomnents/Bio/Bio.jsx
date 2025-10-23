@@ -11,7 +11,7 @@ export default function AboutMe() {
         web applications that bring logic and order to life. My background as a
         project manager in telecommunications taught me to coordinate teams,
         anticipate risks, and communicate efficiently, and I specialised in
-        analysing customers'internet and multiline phone numbers service
+        analysing customers' internet and multiline phone service
         configurations to design the most effective migration solutions.`,
         `However what truly excites me is creating systems myself, from a problem
         to a working solution. This love for logic, inspired me to make the move

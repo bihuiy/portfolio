@@ -19,18 +19,22 @@ export default function Homepage() {
           </p>
 
           <div className="buttons">
-            <a
+            {/* <a
               href="/VivienYangCV.pdf"
               download="VivienYangCV"
               className="download-btn"
             >
               Download CV <IoMdCloudDownload />
-            </a>
+            </a> */}
 
+            <a
+              href="https://github.com/bihuiy"
+              target="_blank"
+              className="download-btn"
+            >
+              GitHub <FaGithub />
+            </a>
             <div className="socials">
-              <a href="https://github.com/bihuiy" target="_blank">
-                GitHub <FaGithub />
-              </a>
               <a href="https://www.linkedin.com/in/bihuiy/" target="_blank">
                 LinkedIn <FaLinkedin />
               </a>

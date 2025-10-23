@@ -2,25 +2,19 @@ import { useState } from "react";
 import "./ResumePage.css";
 import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
-import Skills from "../Skills/Skills";
-import Bio from "../Bio/Bio";
 
 export default function ResumePage() {
   const [activeSection, setActiveSection] = useState("Experience");
   const [animating, setAnimating] = useState(false);
 
-  const sections = ["Experience", "Skills", "Education", "Bio"];
+  const sections = ["Experience", "Education"];
 
   const renderContent = () => {
     switch (activeSection) {
       case "Experience":
         return <Experience />;
-      case "Skills":
-        return <Skills />;
       case "Education":
         return <Education />;
-      case "Bio":
-        return <Bio />;
     }
   };
 

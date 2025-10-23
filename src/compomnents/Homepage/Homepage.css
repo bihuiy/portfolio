@@ -52,14 +52,14 @@
     margin-right: 1rem;
     text-decoration: none;
   }
-  
-  .download-btn:hover {
-    color: #F1EEE9;
-    cursor: pointer;
-  }
 
   .socials a:hover {
     color: #22c55e;
+  }
+
+  .download-btn:hover {
+    color: #F1EEE9;
+    cursor: pointer;
   }
 
   .hero-right {
