@@ -64,7 +64,6 @@ export default function AboutMe() {
 
   const [bioIndex, setBioIndex] = useState(0);
   const currentBio = bios[bioIndex];
-  const totalPage = bios.length;
   const [animating, setAnimating] = useState(false);
 
   const handleClick = (index) => {
@@ -77,56 +76,57 @@ export default function AboutMe() {
     }, 300);
   };
 
-  let dots = [];
-  for (let i = 0; i < totalPage; i++) {
-    dots.push(
-      <span
-        className={i === bioIndex ? "dot active" : "dot"}
-        key={i}
-        onClick={() => handleClick(i)}
-      ></span>
-    );
-  }
-
   return (
-    <div
-      key={currentBio.id}
-      className={`about-me ${animating ? "" : "active"}`}
-    >
-      <h1 className="about-me-title">{currentBio.title}</h1>
-      <div className="about-me-description">
-        {currentBio.description.map((item, index) => (
-          <div key={index} className="about-me-item">
-            {item}
-          </div>
+    <div className="bio">
+      <div className="bio-sidebar">
+        {bios.map((bio) => (
+          <button
+            key={bio.id}
+            className={`bio-tab ${currentBio === bio ? "active" : ""}`}
+            onClick={() => handleClick(bio.id - 1)}
+          >
+            {bio.title}
+          </button>
         ))}
       </div>
-      <div className="bio-pagination-dots">{dots}</div>
-      <div>
-        {currentBio.video1 && (
-          <video
-            key={currentBio.id}
-            controls
-            autoPlay
-            muted
-            playsInline
-            className="about-me-video"
-          >
-            <source src={currentBio.video1} type="video/mp4" />
-          </video>
-        )}
-        {currentBio.video2 && (
-          <video
-            key={currentBio.id}
-            controls
-            autoPlay
-            muted
-            playsInline
-            className="about-me-video"
-          >
-            <source src={currentBio.video2} type="video/mp4" />
-          </video>
-        )}
+      <div
+        key={currentBio.id}
+        className={`about-me ${animating ? "" : "active"}`}
+      >
+        <h1 className="about-me-title">{currentBio.title}</h1>
+        <div className="about-me-description">
+          {currentBio.description.map((item, index) => (
+            <div key={index} className="about-me-item">
+              {item}
+            </div>
+          ))}
+        </div>
+        <div>
+          {currentBio.video1 && (
+            <video
+              key={currentBio.id}
+              controls
+              autoPlay
+              muted
+              playsInline
+              className="about-me-video"
+            >
+              <source src={currentBio.video1} type="video/mp4" />
+            </video>
+          )}
+          {currentBio.video2 && (
+            <video
+              key={currentBio.id}
+              controls
+              autoPlay
+              muted
+              playsInline
+              className="about-me-video"
+            >
+              <source src={currentBio.video2} type="video/mp4" />
+            </video>
+          )}
+        </div>
       </div>
     </div>
   );

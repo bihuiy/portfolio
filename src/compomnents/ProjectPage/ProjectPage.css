@@ -49,6 +49,18 @@
     object-fit: cover;
 }
 
+.project-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.green-arrow {
+    width: 170px;
+    margin-right: 12rem;
+    margin-top: 0;
+}
+
 .pagination-dots {
     display: flex;
     gap: 8px;
@@ -59,11 +71,11 @@
   }
   
   .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #cfcbcb;
-    transition: background-color 0.3s ease;
+    width: 40px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #dcdcdc;
+    transition: all 0.3s ease;
   }
   
   .dot:hover {
@@ -71,18 +83,17 @@
   }
 
   .dot.active {
-    width: 14px;
-    height: 14px;
+    width: 60px;
     background-color: #22c55e;
   }
 
-  .project-detail, .project-video {
+  .project-detail, .project-video, .project-actions {
     opacity: 0;
     transform: translateY(-8px);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
-  .project-detail.active, .project-video.active {
+  .project-detail.active, .project-video.active, .project-actions.active {
     opacity: 1;
     transform: translateY(0);
   }

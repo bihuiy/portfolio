@@ -1,3 +1,60 @@
+.bio {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 20%;
+}
+
+.bio-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  flex: 0.8
+}
+
+.bio-tab {
+  background: none;
+  border: none;
+  color: #4b5563;
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bio-tab:hover {
+    color: #22c55e;
+}
+
+.bio-tab.active {
+    color: #22c55e;
+    font-weight: 600;
+    border-left: 3px solid #22c55e;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+.about-me {
+  flex: 2;
+  padding-left: 60px;
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.about-me.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .about-me-title {
     text-align: center;
     margin-bottom: 35px;
@@ -6,6 +63,16 @@
 
 .about-me-item {
     margin-bottom: 15px;
+}
+
+.about-me-item::first-letter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #22c55e;
+  float: left;
+  margin-right: 0.4rem;
+  line-height: 1;
+  font-family: "Playfair Display", serif;
 }
 
 .about-me-description {
@@ -20,34 +87,6 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     object-fit: cover;
 }
-
-.bio-pagination-dots {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #cfcbcb;
-    transition: background-color 0.3s ease;
-    margin-right: 0.4rem;
-  }
-  
-  .dot:hover {
-    cursor: pointer;
-  }
-
-  .dot.active {
-    width: 14px;
-    height: 14px;
-    background-color: #22c55e;
-  }
 
   .about-me {
     opacity: 0;

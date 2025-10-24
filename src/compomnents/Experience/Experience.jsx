@@ -34,15 +34,9 @@ export default function Experience() {
           including customer project managers, engineers, and account managers,
           to define project scope, identify priorities, and track milestones in
           the context of ambiguous project requirements`,
-        `Designed goal-oriented project workflows, streamlining service
-          validation processes and improving fault detection accuracy to 99%`,
         `Identified and resolved project inefficiencies by revamping
           traditional migration methodologies, resulting in a significant
           reduction in service modification rates and improved project timelines`,
-        `Led a critical hub decommissioning project with a tight timeline by
-          proactively reassessing migration requirements and conducting team
-          training, ensuring all metrics and project milestones aligned with
-          business objectives`,
         `Facilitated effective communication between customers and engineers,
           aligning business requirements with operational capabilities and
           delivering on customer promises`,

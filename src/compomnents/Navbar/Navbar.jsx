@@ -16,12 +16,6 @@ export default function Navbar() {
           Home
         </NavLink>
         <NavLink
-          to="/bio"
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
-          Bio
-        </NavLink>
-        <NavLink
           to="/resume"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
@@ -32,6 +26,12 @@ export default function Navbar() {
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Project
+        </NavLink>
+        <NavLink
+          to="/bio"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Bio
         </NavLink>
         <NavLink
           to="/contact"

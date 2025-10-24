@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./ProjectPage.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import GreenArrow from "../../assets/GreenArrow.png";
 
 export default function ProjectPage() {
   const projects = [
@@ -145,7 +146,10 @@ export default function ProjectPage() {
           >
             <source src={currentProject.video} type="video/mp4" />
           </video>
-          <div className="pagination-dots">{dots}</div>
+          <div className={`project-actions ${animating ? "" : "active"}`}>
+            <div className="pagination-dots">{dots}</div>
+            <img src={GreenArrow} alt="greenarrow" className="green-arrow" />
+          </div>
         </div>
       </div>
     </>

@@ -3,6 +3,7 @@ import avatar from "../../assets/avatar.JPG";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMdCloudDownload } from "react-icons/io";
+import Skills from "../Skills/Skills";
 
 export default function Homepage() {
   return (
@@ -51,7 +52,7 @@ export default function Homepage() {
         </div>
       </section>
 
-      <div className="label">
+      {/* <div className="label">
         <div className="label-detail">
           <h2>1</h2>
           <p>
@@ -84,6 +85,9 @@ export default function Homepage() {
             <span>commits</span>
           </p>
         </div>
+      </div> */}
+      <div className="skills">
+        <Skills />
       </div>
     </>
   );

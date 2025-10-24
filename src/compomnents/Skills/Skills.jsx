@@ -28,11 +28,15 @@ export default function Skills() {
     { icon: <FaGithub />, name: "GitHub" },
     { icon: <GrHeroku />, name: "Heroku" },
     { icon: <SiNetlify />, name: "Netlify" },
+    { name: "Stakeholder Management" },
+    { name: "Communication" },
+    { name: "Teamwork" },
+    { name: "Problem Solving" },
   ];
 
   return (
-    <div className="skills">
-      <h1 className="skills-title">My Skills</h1>
+    <>
+      {/* <h1 className="skills-title">My Skills</h1> */}
       <div className="skills-grid">
         {skills.map((skill) => (
           <div key={skill.name} className="skill-item">
@@ -41,6 +45,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
