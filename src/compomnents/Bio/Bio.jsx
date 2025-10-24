@@ -71,7 +71,6 @@ export default function AboutMe() {
     setAnimating(true);
 
     setTimeout(() => {
-      setBioIndex(index);
       setAnimating(false);
     }, 300);
   };

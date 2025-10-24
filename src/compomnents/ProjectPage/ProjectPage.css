@@ -55,6 +55,14 @@
     align-items: end;
 }
 
+.project-actions p {
+    color: #0bb74a;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Bitcount Grid Single", sans-serif;
+    padding-right: 12rem;
+}
+
 .green-arrow {
     width: 170px;
     margin-right: 12rem;

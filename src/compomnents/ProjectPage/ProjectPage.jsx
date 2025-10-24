@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./ProjectPage.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import GreenArrow from "../../assets/GreenArrow.png";
+import { Bs1CircleFill } from "react-icons/bs";
+import { Bs2CircleFill } from "react-icons/bs";
+import { Bs3CircleFill } from "react-icons/bs";
+import { Bs4CircleFill } from "react-icons/bs";
 
 export default function ProjectPage() {
   const projects = [
@@ -82,7 +86,6 @@ export default function ProjectPage() {
   const [animating, setAnimating] = useState(false);
 
   const handleClick = (index) => {
-    setCurrentIndex(index);
     setAnimating(true);
 
     setTimeout(() => {
@@ -90,6 +93,18 @@ export default function ProjectPage() {
       setAnimating(false);
     }, 300);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimating(true);
+
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalProject);
+        setAnimating(false);
+      }, 500);
+    }, 30000);
+    return () => clearInterval(interval);
+  }, [totalProject]);
 
   let dots = [];
   for (let i = 0; i < totalProject; i++) {
@@ -149,6 +164,7 @@ export default function ProjectPage() {
           <div className={`project-actions ${animating ? "" : "active"}`}>
             <div className="pagination-dots">{dots}</div>
             <img src={GreenArrow} alt="greenarrow" className="green-arrow" />
+            <p>Check out the next project</p>
           </div>
         </div>
       </div>

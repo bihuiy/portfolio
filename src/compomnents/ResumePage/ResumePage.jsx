@@ -23,7 +23,6 @@ export default function ResumePage() {
     setAnimating(true);
 
     setTimeout(() => {
-      setActiveSection(section);
       setAnimating(false);
     }, 300);
   };
