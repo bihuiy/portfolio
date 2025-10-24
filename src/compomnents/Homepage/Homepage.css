@@ -137,6 +137,9 @@
   .label-detail {
     margin-bottom: 15px;
   }
+  .skills {
+    padding: 10%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1200px) {
@@ -155,6 +158,9 @@
   .label {
     padding: 2% 7%;
   }
+  .skills {
+    padding: 0 10%;
+  }
 }
 @media (min-width: 1201px) and (max-width: 1600px) {
   .hero {
@@ -170,5 +176,8 @@
   }
   .label {
     padding: 0 10% 2% 10%;
+  }
+  .skills {
+    padding: 0 9%;
   }
 }

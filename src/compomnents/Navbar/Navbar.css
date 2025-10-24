@@ -22,7 +22,7 @@ nav {
 .nav-links a:hover, .nav-links a.active {
     background-color: #22c55e;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    padding: 5px;
+    padding: 2px;
     border-radius: 15px;
 }
 
@@ -35,8 +35,8 @@ nav {
         flex-direction: column;
     }
     .nav-links {
-        gap: 10px;
-        margin: 15px 0;
+        gap: 5px;
+        margin: 10px 0;
     }
     .logo-title {
         order: 2;
@@ -48,7 +48,7 @@ nav {
         padding: 0 5%;
     }
     .nav-links {
-        gap: 20px;
+        gap: 12px;
         margin: 20px;
     }
   }

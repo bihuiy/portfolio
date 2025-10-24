@@ -1,10 +1,10 @@
-.skills-title {
+/* .skills-title {
     margin-bottom: 35px;
     text-align: left;
     font-size: 2rem;
     font-weight: 700;
     color: #1a1a1a;
-  }
+  } */
   
   .skills-grid {
     display: grid;
@@ -38,9 +38,9 @@
     color: #22c55e;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 319px) and (max-width: 480px) {
     .skills-grid {
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
     }
   
     .skill-item {
@@ -53,3 +53,8 @@
     }
   }
   
+  @media (min-width: 481px) and (max-width: 1200px) {
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+  }

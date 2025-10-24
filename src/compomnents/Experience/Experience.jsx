@@ -68,7 +68,7 @@ export default function Experience() {
   ];
 
   return (
-    <>
+    <div className="experience">
       <h1 className="experience-title">My Experience</h1>
       {experience.map((item) => (
         <div key={item.id} className="experience-item">
@@ -87,6 +87,6 @@ export default function Experience() {
           </ul>
         </div>
       ))}
-    </>
+    </div>
   );
 }

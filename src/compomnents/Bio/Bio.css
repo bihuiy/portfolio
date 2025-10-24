@@ -100,14 +100,37 @@
   }
   
 @media (min-width: 319px) and (max-width: 480px) {
+  .bio {
+    flex-direction: column;
+    padding: 10% 5%;
+    align-items: center;
+  }
     .about-me-title {
         margin-bottom: 15px;
         margin-top: 15px;
     }
+    .bio-sidebar {
+      justify-content: flex-start;
+      padding-left: 0;
+      padding-top: 1.5rem;
+    }
 }
 @media (min-width: 481px) and (max-width: 1200px) {
+  .bio {
+    padding: 5%;
+  }
   .about-me-title {
       margin-bottom: 15px;
       margin-top: 15px;
+  }
+  .bio-sidebar {
+    padding-left: 0rem;
+    padding-top: 1.5rem
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .bio {
+    padding: 5% 9%;
   }
 }
