@@ -14,7 +14,7 @@ import { GrHeroku } from "react-icons/gr";
 import { SiNetlify } from "react-icons/si";
 
 export default function Skills() {
-  const skills = [
+  const techSkills = [
     { icon: <FaReact />, name: "React.js" },
     { icon: <BiLogoJavascript />, name: "JavaScript" },
     { icon: <FaHtml5 />, name: "HTML" },
@@ -28,23 +28,40 @@ export default function Skills() {
     { icon: <FaGithub />, name: "GitHub" },
     { icon: <GrHeroku />, name: "Heroku" },
     { icon: <SiNetlify />, name: "Netlify" },
-    { name: "Stakeholder Management" },
+  ];
+
+  const softSkills = [
+    { name: "Stakeholder management" },
     { name: "Communication" },
     { name: "Teamwork" },
-    { name: "Problem Solving" },
+    { name: "Problem-solving" },
+    { name: "Attention to detail" },
+    { name: "Ownership" },
   ];
 
   return (
-    <>
-      {/* <h1 className="skills-title">My Skills</h1> */}
-      <div className="skills-grid">
-        {skills.map((skill) => (
-          <div key={skill.name} className="skill-item">
-            {skill.icon}
-            <p>{skill.name}</p>
-          </div>
-        ))}
+    <div className="skills-section">
+      <div className="skills-category">
+        <h3 className="skills-title">Technical Skills</h3>
+        <div className="skills-grid">
+          {techSkills.map((skill) => (
+            <div key={skill.name} className="skill-item">
+              {skill.icon}
+              <p>{skill.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </>
+      <div className="skills-category">
+        <h3 className="skills-title">Soft Skills</h3>
+        <div className="skills-grid">
+          {softSkills.map((skill) => (
+            <div key={skill.name} className="skill-item soft">
+              <p>{skill.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }

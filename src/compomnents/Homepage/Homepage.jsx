@@ -20,14 +20,6 @@ export default function Homepage() {
           </p>
 
           <div className="buttons">
-            {/* <a
-              href="/VivienYangCV.pdf"
-              download="VivienYangCV"
-              className="download-btn"
-            >
-              Download CV <IoMdCloudDownload />
-            </a> */}
-
             <a
               href="https://github.com/bihuiy"
               target="_blank"
@@ -35,11 +27,11 @@ export default function Homepage() {
             >
               GitHub <FaGithub />
             </a>
-            <div className="socials">
-              <a href="https://www.linkedin.com/in/bihuiy/" target="_blank">
+            
+              <a href="https://www.linkedin.com/in/bihuiy/" target="_blank" className="socials">
                 LinkedIn <FaLinkedin />
               </a>
-            </div>
+          
           </div>
         </div>
 
@@ -52,40 +44,6 @@ export default function Homepage() {
         </div>
       </section>
 
-      {/* <div className="label">
-        <div className="label-detail">
-          <h2>1</h2>
-          <p>
-            <span>Years of</span>
-            <br />
-            <span>experience</span>
-          </p>
-        </div>
-        <div className="label-detail">
-          <h2>4</h2>
-          <p>
-            <span>Projects</span>
-            <br />
-            <span>completed</span>
-          </p>
-        </div>
-        <div className="label-detail">
-          <h2>10</h2>
-          <p>
-            <span>Technologies</span>
-            <br />
-            <span>across full-stack development</span>
-          </p>
-        </div>
-        <div className="label-detail">
-          <h2>270</h2>
-          <p>
-            <span>Code</span>
-            <br />
-            <span>commits</span>
-          </p>
-        </div>
-      </div> */}
       <div className="skills">
         <Skills />
       </div>

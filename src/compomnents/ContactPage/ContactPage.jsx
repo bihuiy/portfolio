@@ -17,23 +17,43 @@ export default function ContactPage() {
             full-time and freelance opportunities as a junior web engineer.
           </h2>
         </div>
-        <div className="contact-details">
+        {/* <div className="contact-details">
           <div className="contact-item">
-            <MdEmail />
+            <MdEmail className="contact-icon" />
             <a href="mailto:bihuiy7@gmail.com">bihuiy7@gmail.com</a>
           </div>
           <div className="contact-item">
-            <FaLinkedin />
+            <FaLinkedin className="contact-icon" />
             <a href="https://www.linkedin.com/in/bihuiy/" target="_blank">
               /in/bihuiy
             </a>
           </div>
           <div className="contact-item">
-            <FaGithub />
+            <FaGithub className="contact-icon" />
             <a href="https://github.com/bihuiy" target="_blank">
               /bihuiy
             </a>
           </div>
+        </div> */}
+        <div className="contact-page buttons">
+          <a href="mailto:bihuiy7@gmail.com" className="download-btn">
+            Email <MdEmail />
+          </a>
+          <a
+            href="https://github.com/bihuiy"
+            target="_blank"
+            className="download-btn"
+          >
+            GitHub <FaGithub />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/bihuiy/"
+            target="_blank"
+            className="download-btn"
+          >
+            LinkedIn <FaLinkedin />
+          </a>
         </div>
       </div>
       {/* <div className="contact-resumes">
