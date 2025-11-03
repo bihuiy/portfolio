@@ -21,8 +21,7 @@
 
 .project-detail h1 {
     font-size: 3.4rem;      
-    font-weight: 800;      
-    /* color: #1f2937;    */      
+    font-weight: 800;           
     letter-spacing: -0.5px;  
     margin-bottom: 0.5rem;
   }
@@ -111,16 +110,13 @@
     margin-bottom: 1rem;
   }
 
-  .leaf-icon {
-    width: 50px;
-    height: 50px;
+  .leaf-icon, .leaf-logo {
+    width: 60px;
+    height: 60px;
+    transform: rotate(-40deg);
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .leaf {
-    width: 50px;
-    height: 50px;
+    opacity: 70%;
   }
   
   .leaf-icon:hover {
@@ -129,26 +125,9 @@
   }
   
   .leaf-icon.active {
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(-8deg);
     opacity: 1;
   }
-  
-/*   .dot {
-    width: 40px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: #dcdcdc;
-    transition: all 0.3s ease;
-  }
-  
-  .dot:hover {
-    cursor: pointer;
-  }
-
-  .dot.active {
-    width: 60px;
-    background-color: #22c55e;
-  } */
 
   .project-detail, .project-video, .project-actions {
     opacity: 0;

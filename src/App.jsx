@@ -2,7 +2,7 @@
 import { Route, Routes } from "react-router";
 import Navbar from "./compomnents/Navbar/Navbar";
 import Homepage from "./compomnents/Homepage/Homepage";
-import Bio from "./compomnents/Bio/Bio";
+import BioPage from "./compomnents/BioPage/BioPage";
 import ResumePage from "./compomnents/ResumePage/ResumePage";
 import ProjectPage from "./compomnents/ProjectPage/ProjectPage";
 import ContactPage from "./compomnents/ContactPage/ContactPage";
@@ -28,7 +28,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/bio" element={<Bio />} />
+        <Route path="/bio" element={<BioPage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/contact" element={<ContactPage />} />

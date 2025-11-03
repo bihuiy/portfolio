@@ -11,7 +11,8 @@ export default function Experience() {
       description: [
         `Developed and deployed four projects, including three full-stack
           applications, through individual and team-based sprints using Agile
-          methodologies; Participated in daily stand-ups, labs, and collaborative development
+          methodologies.`,
+        `Participated in daily stand-ups, labs, and collaborative development
           processes to enhance both front-end and back-end programming
           proficiency as well as teamwork skills.`,
       ],
@@ -26,7 +27,8 @@ export default function Experience() {
         `Oversaw end-to-end planning, implementation, and delivery of
           multiple large-scale business and technical projects for high-profile
           client Optus using Waterfall and Agile methodologies, driving
-          operational excellence and stakeholder satisfaction; Provided high level strategic support to cross-functional teams,
+          operational excellence and stakeholder satisfaction.`,
+        `Provided high level strategic support to cross-functional teams,
           including customer project managers, engineers, and account managers,
           to define project scope, identify priorities, and track milestones in
           the context of ambiguous project requirements.`,
@@ -40,7 +42,8 @@ export default function Experience() {
       time: "Sep 2019 - Dec 2019",
       description: [
         `Engaged with internal and external stakeholders to understand
-          business requirements and provide IT solutions; Set up hardware, upgraded software, and resolved technical issues to
+          business requirements and provide IT solutions.`,
+        `Set up hardware, upgraded software, and resolved technical issues to
           ensure operational efficiency.`,
       ],
     },
@@ -61,7 +64,9 @@ export default function Experience() {
           </div>
           <div className="experience-details">
             {item.description.map((d, index) => (
-              <div key={index}>{d}</div>
+              <div key={index} style={{ marginBottom: "1rem" }}>
+                {d}
+              </div>
             ))}
           </div>
         </div>

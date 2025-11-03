@@ -1,0 +1,141 @@
+  .truth-lie-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+  }
+  
+  .circle-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, transparent 0%),
+    conic-gradient(
+      #d9e3db,
+      #cceecf,
+      #a3e6b3,
+      #6edb8a,
+      #d9e3db
+    );
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center-photo {
+    background-color: #F1EEE9;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(10deg);
+    z-index: 2;
+  }
+  
+  /* 四个文字项的绝对定位 */
+  .truth-lie-item {
+    position: absolute;
+    width: 150px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .truth-lie-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 各象限位置 */
+  .truth-lie-item.top {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .truth-lie-item.right {
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .truth-lie-item.bottom {
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .truth-lie-item.left {
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* ---------- 弹出层 ---------- */
+  /* .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .popup-content {
+    background: #ffffff;
+    max-width: 600px;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: scaleIn 0.3s ease;
+  }
+  
+  .popup-content p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .bio-video {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #475569;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .close-btn:hover {
+    color: #a084b3;
+  } */
+  
+  /* 动画 */
+  /* @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes scaleIn {
+    from { transform: scale(0.95); opacity: 0.5; }
+    to { transform: scale(1); opacity: 1; }
+  } */
+  

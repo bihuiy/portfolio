@@ -1,8 +1,6 @@
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import DesignCVScreenshot from "../../assets/DesignCVScreenshot.png";
-import CVSreenshot from "../../assets/CVScreenshot.png";
 import "./ContactPage.css";
 
 export default function ContactPage() {
@@ -17,24 +15,6 @@ export default function ContactPage() {
             full-time and freelance opportunities as a junior web engineer.
           </h2>
         </div>
-        {/* <div className="contact-details">
-          <div className="contact-item">
-            <MdEmail className="contact-icon" />
-            <a href="mailto:bihuiy7@gmail.com">bihuiy7@gmail.com</a>
-          </div>
-          <div className="contact-item">
-            <FaLinkedin className="contact-icon" />
-            <a href="https://www.linkedin.com/in/bihuiy/" target="_blank">
-              /in/bihuiy
-            </a>
-          </div>
-          <div className="contact-item">
-            <FaGithub className="contact-icon" />
-            <a href="https://github.com/bihuiy" target="_blank">
-              /bihuiy
-            </a>
-          </div>
-        </div> */}
         <div className="contact-page buttons">
           <a href="mailto:bihuiy7@gmail.com" className="download-btn">
             Email <MdEmail />
@@ -56,24 +36,6 @@ export default function ContactPage() {
           </a>
         </div>
       </div>
-      {/* <div className="contact-resumes">
-        <a
-          href="/VivienYangDesignCV.pdf"
-          download="VivienYangDesignCV"
-          className="contact-resume-item"
-        >
-          <img src={DesignCVScreenshot} alt="DesignCVScreenshot" />
-          <p>Click to download PDF</p>
-        </a>
-        <a
-          href="/VivienYangCV.pdf"
-          download="VivienYangCV"
-          className="contact-resume-item"
-        >
-          <img src={CVSreenshot} alt="CVSreenshot" />
-          <p>Click to download PDF</p>
-        </a>
-      </div> */}
     </>
   );
 }

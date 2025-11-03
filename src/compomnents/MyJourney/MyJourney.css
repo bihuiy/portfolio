@@ -1,0 +1,214 @@
+.journey-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -3rem;
+  margin-bottom: 7rem;
+}
+
+.journey-subtitle.left { order: 3; }
+.journey-circle.left { order: 2; }
+.journey-icon.left {order: 2; }
+.journey-text.left { order: 1; }
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.journey-item {
+  display: flex;
+  margin-top: -3rem;
+  margin-bottom: 5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.journey-item.right {
+  justify-content: flex-end;
+}
+.journey-item.left {
+  justify-content: flex-start;
+}
+
+
+.journey-icon {
+  display: flex;
+}
+
+.journey-subtitle{
+  color: #1e293b;
+}
+
+.journey-text {
+  width: 47%;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+.journey-subtitle {
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: right;
+}
+.journey-subtitle.left {
+  text-align: left;
+}
+
+.journey-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #475569;
+}
+.journey-text.left {
+  text-align: left;
+}
+
+/* ---------- Circle ---------- */
+.journey-circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+.journey-circle.right {
+  margin: auto 0 auto 2.5rem;
+}
+.journey-circle.left {
+  margin: auto 2.5rem auto 0;
+}
+
+.circle-number {
+  color: #1e293b;
+  z-index: 3;
+}
+
+/* Right Arrow Line */
+.journey-circle.right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 90px;    
+  border-bottom: 4px dotted currentColor;
+  transform: translateY(-50%);
+
+}
+
+/* Right Arrow Head */
+.journey-circle.right::before {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 40px); 
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: currentColor;
+}
+
+/* Left Arrow Line */
+.journey-circle.left::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 90px;
+  border-bottom: 4px dotted currentColor;
+  transform: translateY(-50%);
+}
+
+/* Left Arrow Head */
+.journey-circle.left::before {
+  content: "<";
+  position: absolute;
+  top: 50%;
+  right: calc(50% + 40px);
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: currentColor;
+}
+
+/* ---------- Pop Up Layer ---------- */
+.popup-overlay {
+  position: fixed;
+  top: -3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(3px);
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-content {
+  background: #f9f8f6;
+  width: 800px;
+  padding: 1.3rem 6rem 2.3rem 6rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: scaleIn 0.3s ease;
+}
+
+.popup-content h3 {
+  text-align: center;
+  color: #16a34a;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.popup-content p {
+  color: #475569;
+  font-size: 1.4rem;
+  line-height: 2;
+  font-weight: 450;
+}
+
+/* ---------- Close Btn ---------- */
+.close-btn {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #475569;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #22c55e;
+}
+
+/* ---------- Animate ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -24,6 +24,10 @@
   margin-bottom: 1.5rem;
   padding-left: 10px;
   letter-spacing: 0.5px;
+  margin-top: 8px;
+  }
+  .skills-title.soft {
+    margin-top: 1.5rem;
   }
   
   .skill-item {

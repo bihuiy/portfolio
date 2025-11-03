@@ -53,7 +53,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills-category">
-        <h3 className="skills-title">Soft Skills</h3>
+        <h3 className="skills-title soft">Soft Skills</h3>
         <div className="skills-grid">
           {softSkills.map((skill) => (
             <div key={skill.name} className="skill-item soft">

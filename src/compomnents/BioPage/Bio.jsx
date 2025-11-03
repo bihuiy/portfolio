@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./Bio.css";
+import "./BioPage.css";
 
-export default function AboutMe() {
+export default function bios() {
   const bios = [
     {
       id: 1,
@@ -76,7 +76,7 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="bio">
+    <div className="bio-page">
       <div className="bio-sidebar">
         {bios.map((bio) => (
           <button
@@ -90,12 +90,12 @@ export default function AboutMe() {
       </div>
       <div
         key={currentBio.id}
-        className={`about-me ${animating ? "" : "active"}`}
+        className={`bio ${animating ? "" : "active"}`}
       >
-        <h1 className="about-me-title">{currentBio.title}</h1>
-        <div className="about-me-description">
+        <h1 className="bio-title">{currentBio.title}</h1>
+        <div className="bio-description">
           {currentBio.description.map((item, index) => (
-            <div key={index} className="about-me-item">
+            <div key={index} className="bio-item">
               {item}
             </div>
           ))}
@@ -108,7 +108,7 @@ export default function AboutMe() {
               autoPlay
               muted
               playsInline
-              className="about-me-video"
+              className="bio-video"
             >
               <source src={currentBio.video1} type="video/mp4" />
             </video>
@@ -120,7 +120,7 @@ export default function AboutMe() {
               autoPlay
               muted
               playsInline
-              className="about-me-video"
+              className="bio-video"
             >
               <source src={currentBio.video2} type="video/mp4" />
             </video>

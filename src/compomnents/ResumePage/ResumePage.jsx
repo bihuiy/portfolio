@@ -19,10 +19,11 @@ export default function ResumePage() {
   };
 
   const handleClick = (section) => {
-    setActiveSection(section);
+    if (section === activeSection) return;
     setAnimating(true);
 
     setTimeout(() => {
+      setActiveSection(section);
       setAnimating(false);
     }, 300);
   };
@@ -45,7 +46,6 @@ export default function ResumePage() {
       <div className={`resume-content ${animating ? "" : "active"}`}>
         {renderContent()}
       </div>
-      <div></div>
     </div>
   );
 }

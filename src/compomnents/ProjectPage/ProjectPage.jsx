@@ -2,13 +2,10 @@ import { useEffect, useState } from "react";
 import "./ProjectPage.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import GreenArrow from "../../assets/GreenArrow.png";
-import greenLeaf from "../../assets/green-leaf.png";
-import redLeaf from "../../assets/red-leaf.png";
-import { Bs1CircleFill } from "react-icons/bs";
-import { Bs2CircleFill } from "react-icons/bs";
-import { Bs3CircleFill } from "react-icons/bs";
-import { Bs4CircleFill } from "react-icons/bs";
+import greenArrow from "../../assets/greenArrow.png";
+import leaf from "../../assets/leaf.png";
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 
 export default function ProjectPage() {
   const projects = [
@@ -114,7 +111,7 @@ export default function ProjectPage() {
     dots.push(
       <img
         key={i}
-        src={isActive ? greenLeaf : redLeaf}
+        src={leaf}
         alt={isActive ? "active leaf" : "inactive leaf"}
         className={`leaf-icon ${isActive ? "active" : ""}`}
         onClick={() => handleClick(i)}
@@ -145,17 +142,40 @@ export default function ProjectPage() {
           </ul>
           <h3>{currentProject.technology}</h3>
           <div className="project-links">
-            <a href={currentProject.deployLink} target="_blank">
-              <BsArrowUpRight />
-            </a>
-            <a href={currentProject.githubFrontend} target="_blank">
-              <FaGithub />
-            </a>
-            {currentProject.githubBackend && (
-              <a href={currentProject.githubBackend} target="_blank">
+            <span
+              data-tooltip-id="tooltip-Demo"
+              data-tooltip-content="Live Demo"
+              className="project-links"
+            >
+              <a href={currentProject.deployLink} target="_blank">
+                <BsArrowUpRight />
+              </a>
+              <Tooltip id="tooltip-Demo" />
+            </span>
+
+            <span
+              data-tooltip-id="tooltip-GitHub"
+              data-tooltip-content="GitHub"
+              className="project-links"
+            >
+              <a href={currentProject.githubFrontend} target="_blank">
                 <FaGithub />
               </a>
-            )}
+              <Tooltip id="tooltip-GitHub" />
+            </span>
+
+            <span
+              data-tooltip-id="tooltip-Backend"
+              data-tooltip-content="GitHub Backend"
+              className="project-links"
+            >
+              {currentProject.githubBackend && (
+                <a href={currentProject.githubBackend} target="_blank">
+                  <FaGithub />
+                </a>
+              )}
+              <Tooltip id="tooltip-Backend" />
+            </span>
           </div>
         </div>
         <div className={`project-display ${animating ? "" : "active"}`}>
@@ -171,8 +191,12 @@ export default function ProjectPage() {
           </video>
           <div className={`project-actions ${animating ? "" : "active"}`}>
             <div className="pagination-dots">{dots}</div>
-            <img src={GreenArrow} alt="greenarrow" className="green-arrow" />
-            <p>Click <img src={redLeaf} alt="inactive leaf" className="leaf"></img> to check out the next project</p>
+            <img src={greenArrow} alt="greenarrow" className="green-arrow" />
+            <p>
+              Click{" "}
+              <img src={leaf} alt="inactive leaf" className="leaf-logo"></img>{" "}
+              to check out the next project
+            </p>
           </div>
         </div>
       </div>

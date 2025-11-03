@@ -2,7 +2,6 @@ import "./Homepage.css";
 import avatar from "../../assets/avatar.JPG";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { IoMdCloudDownload } from "react-icons/io";
 import Skills from "../Skills/Skills";
 
 export default function Homepage() {
