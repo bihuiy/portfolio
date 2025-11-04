@@ -25,13 +25,11 @@ nav {
     background-color: #22c55e;
     transform: translateY(-2px);
     border-radius: 15px;
-    color: #F1EEE9;
 }
 
 .nav-links a.active {
     background-color: #22c55e;
     border-radius: 15px;
-    color: #F1EEE9;
 }
 
 .logo-title {

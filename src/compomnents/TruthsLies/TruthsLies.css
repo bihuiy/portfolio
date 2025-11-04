@@ -1,23 +1,21 @@
   .truth-lie-title {
     text-align: center;
     font-size: 2.2rem;
-    font-weight: 700;
+    color: #22c55e;
     margin-bottom: 2rem;
-    margin-top: -1rem;
+    margin-top: -2rem;
   }
   
   .circle-container {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
     border-radius: 50%;
-    background: radial-gradient(circle at center, transparent 0%),
-    conic-gradient(
-      #d9e3db,
-      #cceecf,
-      #a3e6b3,
-      #6edb8a,
-      #d9e3db
+    background: conic-gradient(
+      #c2edaf 0deg 90deg,
+      #b7eaa2 90deg 180deg,
+      #99e17a 180deg 270deg,
+      #d6f3ca 270deg 360deg
     );
     margin: 0 auto;
     display: flex;
@@ -27,109 +25,101 @@
   
   .center-photo {
     background-color: #F1EEE9;
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     position: relative;
-    transform: rotate(10deg);
     z-index: 2;
+    transform: rotate(12deg);
   }
   
-  /* 四个文字项的绝对定位 */
-  .truth-lie-item {
+  .truth-text {
     position: absolute;
-    width: 150px;
-    font-size: 0.9rem;
+    width: 170px;
+    font-size: 1.1rem;
     line-height: 1.4;
     cursor: pointer;
+    text-align: center;
     transition: transform 0.3s ease;
   }
   
-  .truth-lie-item:hover {
-    transform: scale(1.05);
+  .truth-text.top:hover, .truth-text.left:hover, .truth-text.right:hover, .truth-text.bottom:hover {
+    
   }
   
-  /* 各象限位置 */
-  .truth-lie-item.top {
-    top: 10px;
-    left: 50%;
+/* number position */
+  .truth-lie-number {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 700;
+    z-index: 3;
+  }
+
+  /* text position */
+  .truth-text.top {
+    top: 15%;
+    left: 25%;
+    transform: translateX(-50%);
+  }
+  .truth-lie-number.top {
+    top: 15%;
+    left: 47%;
     transform: translateX(-50%);
   }
   
-  .truth-lie-item.right {
-    right: 5px;
-    top: 50%;
+  .truth-text.right {
+    right: 15%;
+    top: 25%;
+    transform: translateY(-50%);
+  }
+  .truth-lie-number.right {
+    top: 43%;
+    right: 15%;
     transform: translateY(-50%);
   }
   
-  .truth-lie-item.bottom {
-    bottom: 5px;
-    left: 50%;
+  .truth-text.bottom {
+    bottom: 13%;
+    left: 74%;
+    transform: translateX(-50%);
+  }
+  .truth-lie-number.bottom {
+    bottom: 15%;
+    left: 53%;
     transform: translateX(-50%);
   }
   
-  .truth-lie-item.left {
-    left: 5px;
-    top: 50%;
+  .truth-text.left {
+    left: 15%;
+    top: 65%;
     transform: translateY(-50%);
   }
-  
-  /* ---------- 弹出层 ---------- */
-  /* .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.65);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    backdrop-filter: blur(3px);
-    animation: fadeIn 0.3s ease;
+  .truth-lie-number.left {
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
   }
-  
-  .popup-content {
-    background: #ffffff;
-    max-width: 600px;
-    padding: 2rem 2.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-    position: relative;
-    animation: scaleIn 0.3s ease;
-  }
-  
-  .popup-content p {
+
+/* ---------- Pop Up Layer ---------- */
+.popup-content.truth {
+    padding: 2.5rem 6rem 5.5rem 6rem;
+}
+
+  .popup-content.truth p {
     color: #333;
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.5;
   }
   
   .bio-video {
     width: 100%;
+    max-height: 600px;
     margin-top: 1rem;
     border-radius: 10px;
   }
   
-  .close-btn {
-    position: absolute;
-    top: 0.8rem;
-    right: 1rem;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    color: #475569;
-    cursor: pointer;
-    transition: color 0.2s ease;
-  }
-  
-  .close-btn:hover {
-    color: #a084b3;
-  } */
-  
-  /* 动画 */
-  /* @keyframes fadeIn {
+  /* ---------- Animate ---------- */
+  @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
   }
@@ -137,5 +127,5 @@
   @keyframes scaleIn {
     from { transform: scale(0.95); opacity: 0.5; }
     to { transform: scale(1); opacity: 1; }
-  } */
+  }
   

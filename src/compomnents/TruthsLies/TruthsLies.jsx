@@ -8,6 +8,7 @@ export default function TruthsLies() {
   const data = [
     {
       id: "01",
+      position: "top",
       color: "",
       truth:
         "I spent a year learning Latin dance and passed my Bronze exam, where most of my fellow test-takers were five-year-olds 💃.",
@@ -18,9 +19,10 @@ export default function TruthsLies() {
     },
     {
       id: "02",
+      position: "right",
       color: "",
       truth:
-        "I've been snowboarding for two years, and now I can barely make it down a blue run 🏂`.",
+        "I've been snowboarding for two years, and now I can barely make it down a blue run 🏂.",
       answer:
         "02. Yep, the second one is true. After two years, I've graduated from falling on greens to almost not falling on blues.",
       video:
@@ -28,6 +30,7 @@ export default function TruthsLies() {
     },
     {
       id: "03",
+      position: "bottom",
       color: "",
       truth:
         "I took the Software Engineering Immersive wearing a fluffy hoodie, while my classmates and instructor were all in short sleeves.",
@@ -36,9 +39,11 @@ export default function TruthsLies() {
     },
     {
       id: "04",
+      position: "left",
       color: "",
       truth: "I have a dog.",
-      answer: "04. And yes, the last one was the lie. I don't have a dog 😢.",
+      answer:
+        "04. Okay, you got me! The dog isn't mine. That's Moca, my friend's fluffy superstar. My love for dogs and cats is 100% real. So please do me a favor and send me photos of your furry friends, it'll make my day!",
     },
   ];
 
@@ -50,18 +55,22 @@ export default function TruthsLies() {
 
         {data.map((d) => (
           <div
-            className={`truth-lie-item ${d.position}`}
+            className="truth-lie-item"
             style={{ backgroundColor: d.color }}
             onClick={() => setActiveItem(d)}
           >
-            {d.id}. {d.truth}
+            <h3 className={`truth-lie-number ${d.position}`}>{d.id}</h3>
+            <p className={`truth-text ${d.position}`}>{d.truth}</p>
           </div>
         ))}
       </div>
 
       {activeItem && (
         <div className="popup-overlay" onClick={() => setActiveItem(null)}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="popup-content truth"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button className="close-btn" onClick={() => setActiveItem(null)}>
               ✕
             </button>
