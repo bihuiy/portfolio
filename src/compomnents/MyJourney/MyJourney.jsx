@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./MyJourney.css";
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 
 export default function MyJourney() {
   const [activeItem, setActiveItem] = useState(null);
@@ -66,8 +68,11 @@ export default function MyJourney() {
             <div
               className={`journey-text ${d.side}`}
               onClick={() => setActiveItem(d)}
+              data-tooltip-id="tooltip-journey"
+              data-tooltip-content="Click to enlarge text"
             >
               {d.text}
+              <Tooltip id="tooltip-journey" />
             </div>
           </div>
         ))}

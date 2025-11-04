@@ -43,10 +43,6 @@
     transition: transform 0.3s ease;
   }
   
-  .truth-text.top:hover, .truth-text.left:hover, .truth-text.right:hover, .truth-text.bottom:hover {
-    
-  }
-  
 /* number position */
   .truth-lie-number {
     position: absolute;
@@ -80,7 +76,7 @@
   
   .truth-text.bottom {
     bottom: 13%;
-    left: 74%;
+    left: 77%;
     transform: translateX(-50%);
   }
   .truth-lie-number.bottom {
@@ -91,7 +87,7 @@
   
   .truth-text.left {
     left: 15%;
-    top: 65%;
+    top: 69%;
     transform: translateY(-50%);
   }
   .truth-lie-number.left {

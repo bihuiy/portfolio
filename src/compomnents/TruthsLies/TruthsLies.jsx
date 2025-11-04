@@ -1,6 +1,8 @@
 import "./TruthsLies.css";
 import { useState } from "react";
 import avatar from "../../assets/avatar.png";
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 
 export default function TruthsLies() {
   const [activeItem, setActiveItem] = useState(null);
@@ -49,7 +51,7 @@ export default function TruthsLies() {
 
   return (
     <div className="truth-lie-container">
-      <h2 className="truth-lie-title">3 Truths and a Lie</h2>
+      {/* <h2 className="truth-lie-title">3 Truths and a Lie</h2> */}
       <div className="circle-container">
         <img src={avatar} alt="avatar" className="center-photo" />
 
@@ -60,7 +62,14 @@ export default function TruthsLies() {
             onClick={() => setActiveItem(d)}
           >
             <h3 className={`truth-lie-number ${d.position}`}>{d.id}</h3>
-            <p className={`truth-text ${d.position}`}>{d.truth}</p>
+            <p
+              className={`truth-text ${d.position}`}
+              data-tooltip-id="tooltip-truth"
+              data-tooltip-content="Did you guess it right?"
+            >
+              {d.truth}
+              <Tooltip id="tooltip-truth" />
+            </p>
           </div>
         ))}
       </div>

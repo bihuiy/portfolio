@@ -1,5 +1,5 @@
 import "./Homepage.css";
-import avatar from "../../assets/avatar.JPG";
+import avatar from "../../assets/avatar1.JPG";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Skills from "../Skills/Skills";
