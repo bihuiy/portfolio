@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./ProjectPage.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import greenArrow from "../../assets/greenArrow.png";
+import arrowicon from "../../assets/arrowicon.png";
 import leaf from "../../assets/leaf.png";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
@@ -191,7 +191,7 @@ export default function ProjectPage() {
           </video>
           <div className={`project-actions ${animating ? "" : "active"}`}>
             <div className="pagination-dots">{dots}</div>
-            <img src={greenArrow} alt="greenarrow" className="green-arrow" />
+            <img src={arrowicon} alt="greenarrow" className="green-arrow" />
             <p>
               Click{" "}
               <img src={leaf} alt="inactive leaf" className="leaf-logo"></img>{" "}
