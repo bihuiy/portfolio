@@ -1,5 +1,5 @@
 import "./Homepage.css";
-import avatar from "../../assets/avatar1.JPG";
+import avatar1 from "../../assets/avatar1.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Skills from "../Skills/Skills";
@@ -26,18 +26,21 @@ export default function Homepage() {
             >
               GitHub <FaGithub />
             </a>
-            
-              <a href="https://www.linkedin.com/in/bihuiy/" target="_blank" className="socials">
-                LinkedIn <FaLinkedin />
-              </a>
-          
+
+            <a
+              href="https://www.linkedin.com/in/bihuiy/"
+              target="_blank"
+              className="socials"
+            >
+              LinkedIn <FaLinkedin />
+            </a>
           </div>
         </div>
 
         <div className="hero-right">
           <div className="avatar-border">
             <div className="avatar-wrapper">
-              <img src={avatar} alt="Vivien's avatar" className="avatar" />
+              <img src={avatar1} alt="Vivien's avatar" className="avatar" />
             </div>
           </div>
         </div>
