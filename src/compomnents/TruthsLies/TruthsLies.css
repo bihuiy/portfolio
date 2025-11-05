@@ -1,21 +1,14 @@
-  .truth-lie-title {
-    text-align: center;
-    font-size: 2.2rem;
-    color: #22c55e;
-    margin-bottom: 2rem;
-    margin-top: -2rem;
-  }
-  
-  .circle-container {
+.circle-container {
     position: relative;
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
     border-radius: 50%;
     background: conic-gradient(
-      #c2edaf 0deg 90deg,
-      #b7eaa2 90deg 180deg,
-      #99e17a 180deg 270deg,
-      #d6f3ca 270deg 360deg
+      from 45deg,
+    #d9e3db 0deg 90deg,
+    #287041 90deg 180deg,
+    #4EA770 180deg 270deg,
+    #ABD49D 270deg 360deg
     );
     margin: 0 auto;
     display: flex;
@@ -30,69 +23,53 @@
     border-radius: 50%;
     position: relative;
     z-index: 2;
-    transform: rotate(12deg);
+  }
+
+   .truth-lie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .truth-text {
     position: absolute;
-    width: 170px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     cursor: pointer;
     text-align: center;
     transition: transform 0.3s ease;
-  }
-  
-/* number position */
-  .truth-lie-number {
-    position: absolute;
-    font-size: 1.5rem;
-    font-weight: 700;
-    z-index: 3;
-  }
+  } 
 
   /* text position */
-  .truth-text.top {
-    top: 15%;
-    left: 25%;
+   .truth-text.top {
+    width: 200px;
+    top: 8%;
+    left: 50%;
     transform: translateX(-50%);
-  }
-  .truth-lie-number.top {
-    top: 15%;
-    left: 47%;
-    transform: translateX(-50%);
-  }
-  
+  } 
+
   .truth-text.right {
-    right: 15%;
-    top: 25%;
-    transform: translateY(-50%);
-  }
-  .truth-lie-number.right {
-    top: 43%;
-    right: 15%;
+    width: 180px;
+    right: 5%;
+    top: 50%;
     transform: translateY(-50%);
   }
   
   .truth-text.bottom {
-    bottom: 13%;
-    left: 77%;
-    transform: translateX(-50%);
-  }
-  .truth-lie-number.bottom {
-    bottom: 15%;
-    left: 53%;
+    width: 210px;
+    font-size: 1.2rem;
+    bottom: 1%;
+    left: 50%;
+    color:#F1EEE9;
     transform: translateX(-50%);
   }
   
   .truth-text.left {
-    left: 15%;
-    top: 69%;
-    transform: translateY(-50%);
-  }
-  .truth-lie-number.left {
+    width: 180px;
+    left: 5%;
     top: 50%;
-    left: 15%;
+    color:#F1EEE9;
     transform: translateY(-50%);
   }
 

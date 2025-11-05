@@ -10,7 +10,7 @@ export default function MyJourney() {
     {
       id: "01",
       title: "In high school",
-      text: "Math was my favorite subject. I've been drawn to logic so much that I could lose track of time solving math problems, fascinated by how clear reasoning could turn complex questions into elegant answers.",
+      text: "Maths was my favorite subject. I've been drawn to logic so much that I could lose track of time solving math problems, fascinated by how clear reasoning could turn complex questions into elegant answers.",
       side: "right",
       color: "#cceecf",
     },
