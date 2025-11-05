@@ -8,7 +8,7 @@ export default function ContactPage() {
     <>
       <div className="contact">
         <div className="contact-bio">
-          <h2>Thanks for stopping by and exploring my work!</h2>
+          <h1>Thanks for stopping by and exploring my work!</h1>
           <h2>
             If you'd like to connect or chat about developer opportunities, feel
             free to reach out using the links below. I'm currently open to
